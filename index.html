@@ -25,6 +25,18 @@
     <link rel="stylesheet" href="css/slick.css" />
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .buttonStyle {
+        margin-top: 20px;
+        margin-bottom: 70px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        color: white;
+        background-color: #ec6433;
+        border: 0.2px solid;
+      }
+    </style>
   </head>
 
   <body>
@@ -37,57 +49,11 @@
               <a class="navbar-brand" href="/index">
                 <img src="img/logo.png" alt="logo" class="logoStyle" />
               </a>
-              <!-- <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon" style="display: none"></span>
-              </button> -->
-
               <div
                 class="collapse navbar-collapse main-menu-item justify-content-end"
                 id="navbarSupportedContent"
               >
                 <ul class="navbar-nav align-items-center">
-                  <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="cource.html">Courses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="blog.html"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="single-blog.html"
-                        >Single blog</a
-                      >
-                      <a class="dropdown-item" href="elements.html">Elements</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li> -->
                   <li class="d-none d-lg-block">
                     <a class="btn_1" href="/contact">Get a Quote</a>
                   </li>
@@ -113,8 +79,12 @@
                   Think of a field and we will get you a world class
                   professional tutor!
                 </p>
-                <a href="/course-details" class="btn_1">View Course </a>
-                <a href="/contact" class="btn_2">Get Started </a>
+                <button id="coursesButton" class="buttonStyle">
+                  View Courses
+                </button>
+                <button id="contactButton" class="buttonStyle">
+                  Get Started
+                </button>
               </div>
             </div>
           </div>
@@ -144,7 +114,7 @@
             <div class="single_feature">
               <div class="single_feature_part">
                 <span class="single_feature_icon"><i class="ti-key"></i></span>
-                <h4>Why Chose Us?</h4>
+                <h4>Why Choose Us?</h4>
                 <p>
                   We have huge network of experienced tutors based on almost
                   every subject and field of your requirement.
@@ -328,33 +298,6 @@
                   Make Compelling Design. Learn and apply your ideas into a
                   thought initiating a comprehensive design project.
                 </p>
-                <!-- <div class="author_info">
-                  <div class="author_img">
-                    <img src="img/author/author_2.png" alt="" />
-                    <div class="author_info_text">
-                      <p>Conduct by:</p>
-                      <h5><a href="#">James Well</a></h5>
-                    </div>
-                  </div>
-                  <div class="author_rating">
-                    <div class="rating">
-                      <a href="#"
-                        ><img src="img/icon/color_star.svg" alt=""
-                      /></a>
-                      <a href="#"
-                        ><img src="img/icon/color_star.svg" alt=""
-                      /></a>
-                      <a href="#"
-                        ><img src="img/icon/color_star.svg" alt=""
-                      /></a>
-                      <a href="#"
-                        ><img src="img/icon/color_star.svg" alt=""
-                      /></a>
-                      <a href="#"><img src="img/icon/star.svg" alt="" /></a>
-                    </div>
-                    <p>3.8 Ratings</p>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -413,7 +356,7 @@
                 <a class="btn_4">Art</a>
                 <!-- <h4>$140.00</h4> -->
                 <a>
-                  <h3>Hobbie Classes</h3>
+                  <h3>Hobby Classes</h3>
                 </a>
                 <p>
                   We offer classes for different forms of painting, Hennah art
@@ -810,5 +753,14 @@
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      document.getElementById("coursesButton").onclick = function () {
+        location.href = "/course-details";
+      };
+
+      document.getElementById("contactButton").onclick = function () {
+        location.href = "/contact";
+      };
+    </script>
   </body>
 </html>
