@@ -239,7 +239,7 @@
     color: white;
     font-size: 12px;
     font-weight: 500;
-    margin-top: 0.8%;
+    margin-top: 1.3%;
     margin-left: 2%;
   }
 }
@@ -396,6 +396,9 @@
     position: absolute;
     top: 20%;
     margin-left: 2%;
+}
+.right_muscot {
+    width: 85px;
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
@@ -1518,13 +1521,14 @@ justify-content: center;
    display: flex;
   justify-items: center;
   padding-right: 10%;
+  z-index: 0;
 }
 .game_div_table_2{
   padding-top: 25px;
 }
 
 .first_row_pp{
-  position: relative;
+  z-index: 0;
 }
 
 .greenTick {
@@ -1540,15 +1544,12 @@ justify-content: center;
   position: relative;
   top: 0;
   left: 0;
-  width: 90px;
+  width: 70px;
 }
 .hand_cursor{
-  top: 0;
-  left: 0;
-  position: absolute;
   padding-left: 13px;
-  margin-left: 25%;
-  margin-top: 18%;
+  margin-left: 28%;
+  margin-top: -25%;
   width: 70px;
 }
 
@@ -1701,8 +1702,13 @@ padding-right: 50px;
   }
 
   .right_muscot {
-    width: 76px;
+    width: 65px;
   }
+
+  .Audio_Replay_Btn{
+    width: 30px;
+  }
+
   .left_muscot_bubble {
     width: 70px;
     /* padding-bottom:0px; */
@@ -1832,23 +1838,19 @@ padding-right: 50px;
     }
   
   .box_vegetable{
-    width: 50px;
+    width: 45px;
     position: relative;
     top: 0;
     left: 0
   }
   .hand_cursor{
-    top: 0;
-    left: 0;
-    position: absolute;
     padding-left: 13px;
     margin-left: 25%;
-    margin-top: 18%;
-    width: 50px;
+    width: 50px; 
   }
   
   .first_row{
-    position: relative;
+    /* position: relative; */
   }
 
   .slab_level_4{

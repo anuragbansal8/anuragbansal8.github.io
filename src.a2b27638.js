@@ -35414,7 +35414,10 @@ var Header = function Header(_ref) {
     type: "button",
     onClick: function onClick() {
       localStorage.clear();
-      window.location.clear();
+      window.postMessage({
+        home: 1
+      });
+      location.reload();
     }
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _Home.default,
@@ -35846,283 +35849,283 @@ var level1DemoData = [{
 // LEVEL1 GAME JSON
 exports.level1DemoData = level1DemoData;
 var level1Data = [[{
-  id: 1,
-  big_img: require('../assets/level0/images/Images/big_green_peas_level_0.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
-  isCorrect: false
+  "id": 1,
+  "big_img": require('../assets/level0/images/Images/big_green_peas_level_0.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
+  "isCorrect": false
 }, {
-  id: 2,
-  big_img: require('../assets/level0/images/Images/big_capsicum_level_0.png'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_9.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
-  isCorrect: true
+  "id": 2,
+  "big_img": require('../assets/level0/images/Images/big_capsicum_level_0.png'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_9.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
+  "isCorrect": true
 }, {
-  id: 3,
-  big_img: require('../assets/level0/images/Images/big_yam_level_0.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
-  isCorrect: false
+  "id": 3,
+  "big_img": require('../assets/level0/images/Images/big_yam_level_0.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
+  "isCorrect": false
 }, {
-  id: 4,
-  big_img: require('../assets/level0/images/Images/big_cauliflower_level_0.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
-  isCorrect: false
+  "id": 4,
+  "big_img": require('../assets/level0/images/Images/big_cauliflower_level_0.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_5.mp3'),
+  "isCorrect": false
 }],
 // this is Set 2
 [{
-  id: 5,
-  big_img: require('../assets/level1/images/Images/cabbage_level-1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: false
+  "id": 5,
+  "big_img": require('../assets/level1/images/Images/cabbage_level-1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": false
 }, {
-  id: 6,
-  big_img: require('../assets/level1/images/Images/brinjal_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: false
+  "id": 6,
+  "big_img": require('../assets/level1/images/Images/brinjal_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": false
 }, {
-  id: 7,
-  big_img: require('../assets/level1/images/Images/pumpkin_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: false
+  "id": 7,
+  "big_img": require('../assets/level1/images/Images/pumpkin_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": false
 }, {
-  id: 8,
-  big_img: require('../assets/level1/images/Images/zucchini_level_1.png'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_12.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: true
+  "id": 8,
+  "big_img": require('../assets/level1/images/Images/zucchini_level_1.png'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_12.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": true
 }],
 // this is Set 3
 [{
-  id: 9,
-  big_img: require('../assets/level1/images/Images/yam_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
-  isCorrect: false
+  "id": 9,
+  "big_img": require('../assets/level1/images/Images/yam_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
+  "isCorrect": false
 }, {
-  id: 10,
-  big_img: require('../assets/level1/images/Images/leadyfinger_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_5.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
-  isCorrect: true
+  "id": 10,
+  "big_img": require('../assets/level1/images/Images/leadyfinger_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_5.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
+  "isCorrect": true
 }, {
-  id: 11,
-  big_img: require('../assets/level1/images/Images/turnip_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
-  isCorrect: false
+  "id": 11,
+  "big_img": require('../assets/level1/images/Images/turnip_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
+  "isCorrect": false
 }, {
-  id: 12,
-  big_img: require('../assets/level1/images/Images/cauliflower_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  isCorrect: false
+  "id": 12,
+  "big_img": require('../assets/level1/images/Images/cauliflower_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_7.mp3'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "isCorrect": false
 }],
 // this is Set 4
 [{
-  id: 13,
-  big_img: require('../assets/level1/images/Images/zucchini_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
-  isCorrect: false
+  "id": 13,
+  "big_img": require('../assets/level1/images/Images/zucchini_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
+  "isCorrect": false
 }, {
-  id: 14,
-  big_img: require('../assets/level1/images/Images/peas_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
-  isCorrect: false
+  "id": 14,
+  "big_img": require('../assets/level1/images/Images/peas_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
+  "isCorrect": false
 }, {
-  id: 15,
-  big_img: require('../assets/level1/images/Images/brinjal_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_6.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
-  isCorrect: true
+  "id": 15,
+  "big_img": require('../assets/level1/images/Images/brinjal_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_6.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
+  "isCorrect": true
 }, {
-  id: 16,
-  big_img: require('../assets/level1/images/Images/pumpkin_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
-  isCorrect: false
+  "id": 16,
+  "big_img": require('../assets/level1/images/Images/pumpkin_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_11.mp3'),
+  "isCorrect": false
 }],
 // this is Set 5
 [{
-  id: 17,
-  big_img: require('../assets/level1/images/Images/cabbage_level-1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
-  isCorrect: false
+  "id": 17,
+  "big_img": require('../assets/level1/images/Images/cabbage_level-1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
+  "isCorrect": false
 }, {
-  id: 18,
-  big_img: require('../assets/level1/images/Images/yam_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
-  isCorrect: false
+  "id": 18,
+  "big_img": require('../assets/level1/images/Images/yam_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
+  "isCorrect": false
 }, {
-  id: 19,
-  big_img: require('../assets/level1/images/Images/capsicum_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
-  isCorrect: false
+  "id": 19,
+  "big_img": require('../assets/level1/images/Images/capsicum_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
+  "isCorrect": false
 }, {
-  id: 20,
-  big_img: require('../assets/level1/images/Images/pumpkin_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_7.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
-  isCorrect: true
+  "id": 20,
+  "big_img": require('../assets/level1/images/Images/pumpkin_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_7.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_3.mp3'),
+  "isCorrect": true
 }],
 // this is Set 6 
 [{
-  id: 21,
-  big_img: require('../assets/level1/images/Images/peas_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_8.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
-  isCorrect: true
+  "id": 21,
+  "big_img": require('../assets/level1/images/Images/peas_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_8.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
+  "isCorrect": true
 }, {
-  id: 22,
-  big_img: require('../assets/level1/images/Images/leadyfinger_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
-  isCorrect: false
+  "id": 22,
+  "big_img": require('../assets/level1/images/Images/leadyfinger_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
+  "isCorrect": false
 }, {
-  id: 23,
-  big_img: require('../assets/level1/images/Images/turnip_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
-  isCorrect: false
+  "id": 23,
+  "big_img": require('../assets/level1/images/Images/turnip_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
+  "isCorrect": false
 }, {
-  id: 24,
-  big_img: require('../assets/level1/images/Images/cauliflower_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  isCorrect: false
+  "id": 24,
+  "big_img": require('../assets/level1/images/Images/cauliflower_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_9.mp3'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "isCorrect": false
 }],
 // this is Set 7 
 [{
-  id: 21,
-  big_img: require('../assets/level1/images/Images/pumpkin_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
-  isCorrect: false
+  "id": 25,
+  "big_img": require('../assets/level1/images/Images/pumpkin_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
+  "isCorrect": false
 }, {
-  id: 22,
-  big_img: require('../assets/level1/images/Images/cauliflower_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_10.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
-  isCorrect: true
+  "id": 26,
+  "big_img": require('../assets/level1/images/Images/cauliflower_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_10.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
+  "isCorrect": true
 }, {
-  id: 23,
-  big_img: require('../assets/level1/images/Images/cabbage_level-1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
-  isCorrect: false
+  "id": 27,
+  "big_img": require('../assets/level1/images/Images/cabbage_level-1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
+  "isCorrect": false
 }, {
-  id: 24,
-  big_img: require('../assets/level1/images/Images/brinjal_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
-  isCorrect: false
+  "id": 28,
+  "big_img": require('../assets/level1/images/Images/brinjal_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_12.mp3'),
+  "isCorrect": false
 }],
 // this is Set 8 
 [{
-  id: 25,
-  big_img: require('../assets/level1/images/Images/leadyfinger_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
-  isCorrect: false
+  "id": 29,
+  "big_img": require('../assets/level1/images/Images/leadyfinger_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
+  "isCorrect": false
 }, {
-  id: 26,
-  big_img: require('../assets/level1/images/Images/yam_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
-  isCorrect: false
+  "id": 30,
+  "big_img": require('../assets/level1/images/Images/yam_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
+  "isCorrect": false
 }, {
-  id: 27,
-  big_img: require('../assets/level1/images/Images/turnip_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_13.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
-  isCorrect: true
+  "id": 31,
+  "big_img": require('../assets/level1/images/Images/turnip_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_13.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
+  "isCorrect": true
 }, {
-  id: 28,
-  big_img: require('../assets/level1/images/Images/pumpkin_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
-  isCorrect: false
+  "id": 32,
+  "big_img": require('../assets/level1/images/Images/pumpkin_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_10.mp3'),
+  "isCorrect": false
 }],
 // this is Set 9 
 [{
-  id: 29,
-  big_img: require('../assets/level1/images/Images/brinjal_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
-  isCorrect: false
+  "id": 33,
+  "big_img": require('../assets/level1/images/Images/brinjal_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
+  "isCorrect": false
 }, {
-  id: 30,
-  big_img: require('../assets/level1/images/Images/cabbage_level-1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
-  isCorrect: false
+  "id": 34,
+  "big_img": require('../assets/level1/images/Images/cabbage_level-1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
+  "isCorrect": false
 }, {
-  id: 31,
-  big_img: require('../assets/level1/images/Images/turnip_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
-  isCorrect: false
+  "id": 35,
+  "big_img": require('../assets/level1/images/Images/turnip_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
+  "isCorrect": false
 }, {
-  id: 32,
-  big_img: require('../assets/level1/images/Images/yam_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_11.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
-  isCorrect: true
+  "id": 36,
+  "big_img": require('../assets/level1/images/Images/yam_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_11.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_13.mp3'),
+  "isCorrect": true
 }],
 // this is Set 10 
 [{
-  id: 33,
-  big_img: require('../assets/level1/images/Images/cauliflower_level_1.png'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  isCorrect: false
+  "id": 37,
+  "big_img": require('../assets/level1/images/Images/cauliflower_level_1.png'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "isCorrect": false
 }, {
-  id: 34,
-  big_img: require('../assets/level1/images/Images/zucchini_level_1.png'),
-  correct_sound: require('../assets/common/audio/For_correct_answer.mp3'),
-  correct_answer: require('../assets/level0/audio/VBMV_A_L0_12.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  green_tick: require('../assets/level1/images/green_tick_icon_level_1.png'),
-  isCorrect: true
+  "id": 38,
+  "big_img": require('../assets/level1/images/Images/zucchini_level_1.png'),
+  "correct_sound": require('../assets/common/audio/For_correct_answer.mp3'),
+  "correct_answer": require('../assets/level0/audio/VBMV_A_L0_12.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "green_tick": require('../assets/level1/images/green_tick_icon_level_1.png'),
+  "isCorrect": true
 }, {
-  id: 35,
-  big_img: require('../assets/level1/images/Images/peas_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: false
+  "id": 39,
+  "big_img": require('../assets/level1/images/Images/peas_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": false
 }, {
-  id: 36,
-  big_img: require('../assets/level1/images/Images/capsicum_level_1.png'),
-  wrong_sound: require('../assets/common/audio/For_the_wrong_answer.mp3'),
-  find_vegetable: require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
-  isCorrect: false
+  "id": 40,
+  "big_img": require('../assets/level1/images/Images/capsicum_level_1.png'),
+  "wrong_sound": require('../assets/common/audio/For_the_wrong_answer.mp3'),
+  "find_vegetable": require('../assets/level1/audio/VBMV_A_L1_6.mp3'),
+  "isCorrect": false
 }]];
 exports.level1Data = level1Data;
 },{"../assets/level0/images/Images/brinjal_level_0.png":"assets/level0/images/Images/brinjal_level_0.png","../assets/level0/images/Images/brinjal_inactive_level_0.png":"assets/level0/images/Images/brinjal_inactive_level_0.png","../assets/level0/images/Images/big_brinjal_level_0.png":"assets/level0/images/Images/big_brinjal_level_0.png","../assets/level0/audio/VBMV_A_L0_6.mp3":"assets/level0/audio/VBMV_A_L0_6.mp3","../assets/level0/images/Images/cabbage_level_0.png":"assets/level0/images/Images/cabbage_level_0.png","../assets/level0/images/Images/cabbage_inactive_level_0.png":"assets/level0/images/Images/cabbage_inactive_level_0.png","../assets/level0/images/Images/big_cabbage_level_0.png":"assets/level0/images/Images/big_cabbage_level_0.png","../assets/level0/audio/VBMV_A_L0_4.mp3":"assets/level0/audio/VBMV_A_L0_4.mp3","../assets/level0/images/Images/capsicum_level_0.png":"assets/level0/images/Images/capsicum_level_0.png","../assets/level0/images/Images/capsicum_inactive_level_0.png":"assets/level0/images/Images/capsicum_inactive_level_0.png","../assets/level0/images/Images/big_capsicum_level_0.png":"assets/level0/images/Images/big_capsicum_level_0.png","../assets/level0/audio/VBMV_A_L0_9.mp3":"assets/level0/audio/VBMV_A_L0_9.mp3","../assets/level0/images/Images/cauliflower_level_0.png":"assets/level0/images/Images/cauliflower_level_0.png","../assets/level0/images/Images/cauliflower_inactive_level_0.png":"assets/level0/images/Images/cauliflower_inactive_level_0.png","../assets/level0/images/Images/big_cauliflower_level_0.png":"assets/level0/images/Images/big_cauliflower_level_0.png","../assets/level0/audio/VBMV_A_L0_10.mp3":"assets/level0/audio/VBMV_A_L0_10.mp3","../assets/level1/audio/VBMV_A_L1_4.mp3":"assets/level1/audio/VBMV_A_L1_4.mp3","../assets/level0/images/Images/green_peas_level_0.png":"assets/level0/images/Images/green_peas_level_0.png","../assets/level0/images/Images/green_peas_inactive_level_0.png":"assets/level0/images/Images/green_peas_inactive_level_0.png","../assets/level0/images/Images/big_green_peas_level_0.png":"assets/level0/images/Images/big_green_peas_level_0.png","../assets/level0/audio/VBMV_A_L0_8.mp3":"assets/level0/audio/VBMV_A_L0_8.mp3","../assets/level0/images/Images/lady finger_level_0.png":"assets/level0/images/Images/lady finger_level_0.png","../assets/level0/images/Images/lady finger_inactive_level_0.png":"assets/level0/images/Images/lady finger_inactive_level_0.png","../assets/level0/images/Images/big_lady finger_level_0.png":"assets/level0/images/Images/big_lady finger_level_0.png","../assets/level0/audio/VBMV_A_L0_5.mp3":"assets/level0/audio/VBMV_A_L0_5.mp3","../assets/level0/images/Images/pumpkin_level_0.png":"assets/level0/images/Images/pumpkin_level_0.png","../assets/level0/images/Images/pumpkin_inactive_level_0.png":"assets/level0/images/Images/pumpkin_inactive_level_0.png","../assets/level0/images/Images/big_pumpkin_level_0.png":"assets/level0/images/Images/big_pumpkin_level_0.png","../assets/level0/audio/VBMV_A_L0_7.mp3":"assets/level0/audio/VBMV_A_L0_7.mp3","../assets/level0/images/Images/turnip_level_0.png":"assets/level0/images/Images/turnip_level_0.png","../assets/level0/images/Images/turnip_inactive_level_0.png":"assets/level0/images/Images/turnip_inactive_level_0.png","../assets/level0/images/Images/big_turnip_level_0.png":"assets/level0/images/Images/big_turnip_level_0.png","../assets/level0/audio/VBMV_A_L0_13.mp3":"assets/level0/audio/VBMV_A_L0_13.mp3","../assets/level0/images/Images/yam_level_0.png":"assets/level0/images/Images/yam_level_0.png","../assets/level0/images/Images/yam_inactive_level_0.png":"assets/level0/images/Images/yam_inactive_level_0.png","../assets/level0/images/Images/big_yam_level_0.png":"assets/level0/images/Images/big_yam_level_0.png","../assets/level0/audio/VBMV_A_L0_11.mp3":"assets/level0/audio/VBMV_A_L0_11.mp3","../assets/level0/images/Images/zucchini_level_0.png":"assets/level0/images/Images/zucchini_level_0.png","../assets/level0/images/Images/zucchini_inactive_level_0.png":"assets/level0/images/Images/zucchini_inactive_level_0.png","../assets/level0/images/Images/big_zucchini_level_0.png":"assets/level0/images/Images/big_zucchini_level_0.png","../assets/level0/audio/VBMV_A_L0_12.mp3":"assets/level0/audio/VBMV_A_L0_12.mp3","../assets/common/audio/For_the_wrong_answer.mp3":"assets/common/audio/For_the_wrong_answer.mp3","../assets/common/audio/For_correct_answer.mp3":"assets/common/audio/For_correct_answer.mp3","../assets/level1/images/green_tick_icon_level_1.png":"assets/level1/images/green_tick_icon_level_1.png","../assets/common/textures/interactions/Hand_Cursor3.png":"assets/common/textures/interactions/Hand_Cursor3.png","../assets/level1/audio/VBMV_A_L1_5.mp3":"assets/level1/audio/VBMV_A_L1_5.mp3","../assets/level1/images/Images/cabbage_level-1.png":"assets/level1/images/Images/cabbage_level-1.png","../assets/level1/audio/VBMV_A_L1_6.mp3":"assets/level1/audio/VBMV_A_L1_6.mp3","../assets/level1/images/Images/brinjal_level_1.png":"assets/level1/images/Images/brinjal_level_1.png","../assets/level1/images/Images/pumpkin_level_1.png":"assets/level1/images/Images/pumpkin_level_1.png","../assets/level1/images/Images/zucchini_level_1.png":"assets/level1/images/Images/zucchini_level_1.png","../assets/level1/images/Images/yam_level_1.png":"assets/level1/images/Images/yam_level_1.png","../assets/level1/audio/VBMV_A_L1_7.mp3":"assets/level1/audio/VBMV_A_L1_7.mp3","../assets/level1/images/Images/leadyfinger_level_1.png":"assets/level1/images/Images/leadyfinger_level_1.png","../assets/level1/images/Images/turnip_level_1.png":"assets/level1/images/Images/turnip_level_1.png","../assets/level1/images/Images/cauliflower_level_1.png":"assets/level1/images/Images/cauliflower_level_1.png","../assets/level1/audio/VBMV_A_L1_11.mp3":"assets/level1/audio/VBMV_A_L1_11.mp3","../assets/level1/images/Images/peas_level_1.png":"assets/level1/images/Images/peas_level_1.png","../assets/level1/audio/VBMV_A_L1_3.mp3":"assets/level1/audio/VBMV_A_L1_3.mp3","../assets/level1/images/Images/capsicum_level_1.png":"assets/level1/images/Images/capsicum_level_1.png","../assets/level1/audio/VBMV_A_L1_9.mp3":"assets/level1/audio/VBMV_A_L1_9.mp3","../assets/level1/audio/VBMV_A_L1_12.mp3":"assets/level1/audio/VBMV_A_L1_12.mp3","../assets/level1/audio/VBMV_A_L1_10.mp3":"assets/level1/audio/VBMV_A_L1_10.mp3","../assets/level1/audio/VBMV_A_L1_13.mp3":"assets/level1/audio/VBMV_A_L1_13.mp3"}],"src/components/Level0/modal.css":[function(require,module,exports) {
@@ -36254,6 +36257,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i.return && (_r = _i.return(), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+var index = 0;
 var Index = function Index(_ref) {
   var setCurrentLevelState = _ref.setCurrentLevelState;
   var _useState = (0, _react.useState)(true),
@@ -36354,11 +36358,11 @@ var Index = function Index(_ref) {
         levelData.forEach(function (item) {
           item.disabled = false;
         });
+        playSoundFiles(); // Call the function to play sound files
         setLevelData(levelData);
         setShowModal(_objectSpread(_objectSpread({}, showModal), {}, {
           index: 0
         }));
-        playSoundFiles(); // Call the function to play sound files
       }, 3000);
     }
   }, [levelData]);
@@ -36367,58 +36371,25 @@ var Index = function Index(_ref) {
    * Play sound Auto After tapping all vegetables
    */
   var playSoundFiles = function playSoundFiles() {
-    _constants.level0Data.forEach(function (item, index) {
-      setTimeout(function () {
-        var audio = new Audio(item.sound);
-        var containers = document.querySelectorAll(".containerStyle");
-        audio.onplay = function () {
-          containers[index].classList.add("active");
-        };
-        audio.onended = function () {
-          containers[index].classList.remove("active");
-          if (index === _constants.level0Data.length - 1) {
-            var fire = function fire(particleRatio, opts) {
-              confetti(Object.assign({}, defaults, opts, {
-                particleCount: Math.floor(count * particleRatio)
-              }));
-            };
-            setShowGrid(false);
-            setSoundFilesEnded(true);
-            var count = 200;
-            var defaults = {
-              origin: {
-                y: 0.7
-              }
-            };
-            fire(0.25, {
-              spread: 26,
-              startVelocity: 55
-            });
-            fire(0.2, {
-              spread: 60
-            });
-            fire(0.35, {
-              spread: 100,
-              decay: 0.91,
-              scalar: 0.8
-            });
-            fire(0.1, {
-              spread: 120,
-              startVelocity: 25,
-              decay: 0.92,
-              scalar: 1.2
-            });
-            fire(0.1, {
-              spread: 120,
-              startVelocity: 45
-            });
-            var playNewGameAudio = new Audio(_GL_A_.default);
-            playNewGameAudio.play();
-          }
-        };
-        audio.play();
-      }, index * 2500);
-    });
+    var audio = new Audio(levelData[index].sound);
+    var containers = document.querySelectorAll(".containerStyle");
+    audio.onplay = function () {
+      containers[index].classList.add("active");
+    };
+    audio.onended = function () {
+      containers[index].classList.remove("active");
+      index++;
+      if (index < _constants.level0Data.length) {
+        playSoundFiles();
+      }
+      if (index === _constants.level0Data.length) {
+        setShowGrid(false);
+        setSoundFilesEnded(true);
+        var playNewGameAudio = new Audio(_GL_A_.default);
+        playNewGameAudio.play();
+      }
+    };
+    audio.play();
   };
 
   /**
@@ -36944,12 +36915,13 @@ var Index = function Index(_ref) {
       }
       setShowTick(false);
       setIsCorrectImageClicked(false);
-      setTimeout(function () {
-        gameIndex > 0 && gameIndex < _constants.level1Data.length && new Audio(_constants.level1Data[gameIndex][0].find_vegetable).play();
-      }, 500);
+      gameIndex > 0 && gameIndex < _constants.level1Data.length && new Audio(_constants.level1Data[gameIndex][0].find_vegetable).play();
     }, 1500);
   }, [gameIndex, setGameIndex]);
-  (0, _react.useEffect)(function () {}, [showCursorHand, setShowCursorHand]);
+
+  // useEffect(() => {
+
+  // }, [showCursorHand, setShowCursorHand])
 
   /**
    * onclick play button
@@ -36963,12 +36935,6 @@ var Index = function Index(_ref) {
    * onclick play button
    */
   var PlayAgainButton = function PlayAgainButton() {
-    setShouldPlayMusic(true);
-    setStartPlay(false);
-    setShowMascot(true);
-    setSoundFilesEnded(false);
-    setProgress(0);
-    setLevelData1(_constants.level1Data[0]);
     window.location.reload();
   };
 
@@ -37000,10 +36966,8 @@ var Index = function Index(_ref) {
     }
   }, [playLevelThreeAudio]);
   var handleThirdAudioEnd = function handleThirdAudioEnd() {
-    setTimeout(function () {
-      setPlayLevelThreeAudio(true);
-      setShowCursorHand(true);
-    }, 1500);
+    setPlayLevelThreeAudio(true);
+    setShowCursorHand(true);
   };
 
   // when fourth audio end call this function
@@ -37027,24 +36991,31 @@ var Index = function Index(_ref) {
       // Disable image click if correct image is already clicked
       return;
     }
+
+    // Disable image click
+    setIsCorrectImageClicked(true);
     setSelectedImageId(item.id);
     if (item.isCorrect) {
       var correctSound = new Audio(item.correct_sound);
+      correctSound.addEventListener('ended', function () {
+        var correctAnswer = new Audio(item.correct_answer);
+        correctAnswer.addEventListener('ended', function () {
+          // Enable image click after correct_answer audio ends
+          setIsCorrectImageClicked(false);
+        });
+        correctAnswer.play();
+      });
       correctSound.play();
+
       // setShowCursorHand(true);
       setShowTick(true);
       var i = gameIndex;
       i++;
       setTimeout(function () {
-        var correctAnswer = new Audio(item.correct_answer);
-        correctAnswer.play();
-        setTimeout(function () {
-          setGameIndex(i);
-          setIsCorrectImageClicked(true);
-        }, 1500);
+        setGameIndex(i);
       }, 1500);
-      // increase progress bar
 
+      // increase progress bar
       if ((gameIndex + 1) % 2 === 0) {
         var updatedProgress = progress;
         updatedProgress = updatedProgress + 20;
@@ -37054,8 +37025,12 @@ var Index = function Index(_ref) {
     } else {
       var wrongSound = new Audio(item.wrong_sound);
       wrongSound.addEventListener('ended', function () {
-        var audio = new Audio(item.find_vegetable);
-        audio.play();
+        var findVegetableAudio = new Audio(item.find_vegetable);
+        findVegetableAudio.addEventListener('ended', function () {
+          // Enable image click after find_vegetable audio ends
+          setIsCorrectImageClicked(false);
+        });
+        findVegetableAudio.play();
       });
       wrongSound.play();
       var wrongImage = document.getElementById("image-".concat(item.id));
@@ -37065,18 +37040,24 @@ var Index = function Index(_ref) {
       }, 830);
     }
   };
-
-  // gameInstructionAudio
-  var gameInstructionAudio = function gameInstructionAudio(levelData) {
+  var gameInstructionAudio = function gameInstructionAudio() {
     if (!isButtonDisabled) {
-      var audio = new Audio(levelData[gameIndex].find_vegetable);
-      setIsAudioPlaying(true);
-      setIsButtonDisabled(true);
-      audio.addEventListener('ended', function () {
-        setIsAudioPlaying(false);
-        setIsButtonDisabled(false);
-      });
-      audio.play();
+      var currentGameIndex = gameIndex % levelData1.length;
+      var currentItem = levelData1[currentGameIndex];
+      if (currentItem) {
+        var findVegetableAudio = new Audio(currentItem.find_vegetable);
+        findVegetableAudio.addEventListener("play", function () {
+          setIsCorrectImageClicked(true);
+          setIsAudioPlaying(true);
+          setIsButtonDisabled(true);
+        });
+        findVegetableAudio.addEventListener("ended", function () {
+          setIsCorrectImageClicked(false);
+          setIsAudioPlaying(false);
+          setIsButtonDisabled(false);
+        });
+        findVegetableAudio.play();
+      }
     }
   };
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -37097,7 +37078,7 @@ var Index = function Index(_ref) {
     className: "btn p-0",
     type: "button",
     onClick: function onClick() {
-      return gameInstructionAudio(levelData1);
+      return gameInstructionAudio();
     },
     disabled: isButtonDisabled
   }, isAudioPlaying ? /*#__PURE__*/_react.default.createElement("img", {
@@ -38505,22 +38486,26 @@ var Index = function Index(_ref) {
     _useState48 = _slicedToArray(_useState47, 2),
     isButtonDisabled = _useState48[0],
     setIsButtonDisabled = _useState48[1];
-  var _useState49 = (0, _react.useState)(10),
+  var _useState49 = (0, _react.useState)(true),
     _useState50 = _slicedToArray(_useState49, 2),
-    score = _useState50[0],
-    setScore = _useState50[1];
-  var _useState51 = (0, _react.useState)([]),
+    isAudioReplayButtonActive = _useState50[0],
+    setIsAudioReplayButtonActive = _useState50[1];
+  var _useState51 = (0, _react.useState)(10),
     _useState52 = _slicedToArray(_useState51, 2),
-    whitelistDemoIndex = _useState52[0],
-    setWhitelistDemoIndex = _useState52[1];
+    score = _useState52[0],
+    setScore = _useState52[1];
   var _useState53 = (0, _react.useState)([]),
     _useState54 = _slicedToArray(_useState53, 2),
-    rightAnswerArray = _useState54[0],
-    setRightAnswerArray = _useState54[1];
-  var _useState55 = (0, _react.useState)(0),
+    whitelistDemoIndex = _useState54[0],
+    setWhitelistDemoIndex = _useState54[1];
+  var _useState55 = (0, _react.useState)([]),
     _useState56 = _slicedToArray(_useState55, 2),
-    progress = _useState56[0],
-    setProgress = _useState56[1];
+    rightAnswerArray = _useState56[0],
+    setRightAnswerArray = _useState56[1];
+  var _useState57 = (0, _react.useState)(0),
+    _useState58 = _slicedToArray(_useState57, 2),
+    progress = _useState58[0],
+    setProgress = _useState58[1];
   var updateScore = function updateScore(newScore) {
     setScore(newScore);
   };
@@ -38737,21 +38722,22 @@ var Index = function Index(_ref) {
       array.push(index);
       setRightAnswerArray(array);
     } else {
-      // wrongOptionCount++;
-      // if(wrongOptionCount === 1 ){
-
-      // }
-
       var wrongSound = new Audio(item.wrong_sound);
-      wrongSound.addEventListener('ended', function () {
+      wrongSound.addEventListener("ended", function () {
         var audio = new Audio(item.find_vegetable);
+        audio.addEventListener("play", function () {
+          setIsCorrectImageClicked(true);
+        });
+        audio.addEventListener("ended", function () {
+          setIsCorrectImageClicked(false);
+        });
         audio.play();
       });
       wrongSound.play();
       var wrongImage = document.getElementById("image-".concat(item.id));
-      wrongImage.classList.add('rise-shake');
+      wrongImage.classList.add("rise-shake");
       setTimeout(function () {
-        wrongImage.classList.remove('rise-shake');
+        wrongImage.classList.remove("rise-shake");
       }, 830);
     }
   };
@@ -38784,24 +38770,24 @@ var Index = function Index(_ref) {
     className: "audio_replay d-flex justify-content-end"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "audio_replay_button"
-  }, audioReplayEnded ? /*#__PURE__*/_react.default.createElement("button", {
+  }, audioReplayEnded && /*#__PURE__*/_react.default.createElement("button", {
     className: "btn p-0",
     type: "button",
     onClick: function onClick() {
       return gameInstructionAudio(levelData2);
     },
     disabled: isButtonDisabled
-  }, isAudioPlaying ? /*#__PURE__*/_react.default.createElement("img", {
-    src: _inactive_audio_replay.default,
-    className: " Audio_Replay_Btn",
+  }, isAudioPlaying || isAudioReplayButtonActive ? /*#__PURE__*/_react.default.createElement("img", {
+    src: _Audio_Replay.default,
+    className: "img-fluid Audio_Replay_Btn",
     alt: "Audio_Replay"
   }) : /*#__PURE__*/_react.default.createElement("img", {
-    src: _Audio_Replay.default,
-    className: " Audio_Replay_Btn",
-    alt: "Audio_Replay"
-  })) : /*#__PURE__*/_react.default.createElement("img", {
     src: _inactive_audio_replay.default,
-    className: "Audio_Replay_Btn",
+    className: "img-fluid Audio_Replay_Btn",
+    alt: "Audio_Replay"
+  })), !audioReplayEnded && /*#__PURE__*/_react.default.createElement("img", {
+    src: _inactive_audio_replay.default,
+    className: "img-fluid Audio_Replay_Btn",
     alt: "Audio_Replay"
   }), showAudioReplayCursor && /*#__PURE__*/_react.default.createElement("img", {
     src: _Hand_Cursor.default,
@@ -40021,26 +40007,33 @@ var Index = function Index(_ref) {
         setProgress(updatedProgress);
       }
     }
+
+    // Disable image click
+    setIsCorrectImageClicked(true);
     setSelectedImageId(item.id);
     if (item.isCorrect) {
       var correctSound = new Audio(item.correct_sound);
-      correctSound.play();
-      // setShowCursorHand(true);
-      setShowTick(true);
-      var _i2 = gameIndex;
-      _i2++;
-      setTimeout(function () {
+      correctSound.addEventListener("ended", function () {
         var correctAnswer = new Audio(item.correct_answer);
         correctAnswer.addEventListener("ended", function () {
           setIsAudioReplayButtonActive(true);
+          // Enable image click after correct_answer audio ends
+          setIsCorrectImageClicked(false);
+        });
+        correctAnswer.addEventListener("ended", function () {
+          // Increase game index and set next image after correct_answer audio ends
+          var i = gameIndex;
+          i++;
+          setTimeout(function () {
+            setGameIndex(i);
+          }, 0);
         });
         correctAnswer.play();
-        setIsAudioReplayButtonActive(false);
-        setTimeout(function () {
-          setGameIndex(_i2);
-          setIsCorrectImageClicked(true);
-        }, 1500);
-      }, 1500);
+      });
+      correctSound.play();
+
+      // setShowCursorHand(true);
+      setShowTick(true);
       if ([2, 4, 7].includes(gameIndex + 1)) {
         var _updatedProgress = progress;
         _updatedProgress = _updatedProgress + 25;
@@ -40050,8 +40043,12 @@ var Index = function Index(_ref) {
       if (gameIndex > 6) wrongAnswerFlag = true;
       var wrongSound = new Audio(item.wrong_sound);
       wrongSound.addEventListener("ended", function () {
-        var audio = new Audio(item.try_again_sound);
-        audio.play();
+        var tryAgainSound = new Audio(item.try_again_sound);
+        tryAgainSound.addEventListener("ended", function () {
+          // Enable image click after try_again_sound audio ends
+          setIsCorrectImageClicked(false);
+        });
+        tryAgainSound.play();
       });
       wrongSound.play();
       var wrongImage = document.getElementById("image-".concat(item.id));
@@ -40063,16 +40060,24 @@ var Index = function Index(_ref) {
   };
 
   // gameInstructionAudio
-  var gameInstructionAudio = function gameInstructionAudio(levelData) {
+  var gameInstructionAudio = function gameInstructionAudio() {
     if (!isButtonDisabled) {
-      var audio = new Audio(levelData[gameIndex].find_vegetable);
-      setIsAudioPlaying(true);
-      setIsButtonDisabled(true);
-      audio.addEventListener("ended", function () {
-        setIsAudioPlaying(false);
-        setIsButtonDisabled(false);
-      });
-      audio.play();
+      var currentGameIndex = gameIndex % levelData1.length;
+      var currentItem = levelData1[currentGameIndex];
+      if (currentItem) {
+        var findVegetableAudio = new Audio(currentItem.find_vegetable);
+        findVegetableAudio.addEventListener("play", function () {
+          setIsCorrectImageClicked(true);
+          setIsAudioPlaying(true);
+          setIsButtonDisabled(true);
+        });
+        findVegetableAudio.addEventListener("ended", function () {
+          setIsCorrectImageClicked(false);
+          setIsAudioPlaying(false);
+          setIsButtonDisabled(false);
+        });
+        findVegetableAudio.play();
+      }
     }
   };
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -40093,7 +40098,7 @@ var Index = function Index(_ref) {
     className: "btn p-0",
     type: "button",
     onClick: function onClick() {
-      return gameInstructionAudio(levelData1);
+      return gameInstructionAudio();
     },
     disabled: isButtonDisabled
   }, isAudioPlaying || isAudioReplayButtonActive ? /*#__PURE__*/_react.default.createElement("img", {
@@ -40278,6 +40283,12 @@ var Index = function Index(_ref) {
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
+            _context.next = 2;
+            return localStorage.setItem('currentLevel', 4);
+          case 2:
+            window.location.reload();
+            setCurrentLevelState(4);
+          case 4:
           case "end":
             return _context.stop();
         }
@@ -40313,6 +40324,8 @@ module.exports = "/VBMV_A_L4_3.a5b9ea28.mp3";
 module.exports = "/VBMV_A_L4_8.a6c5e6df.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_9.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_9.d26a4581.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_36.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_36.8e68a553.mp3";
 },{}],"assets/level4/images/slab_level_4.png":[function(require,module,exports) {
 module.exports = "/slab_level_4.43bd7f6d.png";
 },{}],"assets/level4/images/Images/brinjal_level_4.png":[function(require,module,exports) {
@@ -40335,58 +40348,60 @@ module.exports = "/VBMV_A_L4_6.af18a3ed.mp3";
 module.exports = "/VBMV_A_L4_7.51472b85.mp3";
 },{}],"assets/level4/images/Images/pumpkin_level_4.png":[function(require,module,exports) {
 module.exports = "/pumpkin_level_4.82f8c147.png";
-},{}],"assets/level4/audio/VBMV_A_L4_18.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_18.1d3f6fd7.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_14.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_14.80eb6e60.mp3";
 },{}],"assets/level4/images/Images/peas_level_4.png":[function(require,module,exports) {
 module.exports = "/peas_level_4.a8a9d518.png";
-},{}],"assets/level4/audio/VBMV_A_L4_19.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_19.2279ac22.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_15.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_15.66961054.mp3";
 },{}],"assets/level4/images/Images/zucchini_level_4.png":[function(require,module,exports) {
 module.exports = "/zucchini_level_4.d5891d38.png";
-},{}],"assets/level4/audio/VBMV_A_L4_20.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_20.632f76e9.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_16.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_16.eaea1fca.mp3";
 },{}],"assets/level4/images/Images/capsicum_level_4.png":[function(require,module,exports) {
 module.exports = "/capsicum_level_4.eda528be.png";
-},{}],"assets/level4/audio/VBMV_A_L4_21.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_21.b2e1deed.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_17.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_17.0e55e5f1.mp3";
-},{}],"assets/level4/audio/VBMV_A_L4_30.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_30.d003dd15.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_24.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_24.945f166d.mp3";
-},{}],"assets/level4/audio/VBMV_A_L4_32.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_32.f7664b10.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_26.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_26.e1909455.mp3";
 },{}],"assets/level4/images/Images/ladyfinger_level_4.png":[function(require,module,exports) {
 module.exports = "/ladyfinger_level_4.9616285b.png";
-},{}],"assets/level4/audio/VBMV_A_L4_31.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_31.8f19d944.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_25.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_25.9477ce19.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_27.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_27.1de98802.mp3";
-},{}],"assets/level4/audio/VBMV_A_L4_34.mp3":[function(require,module,exports) {
-module.exports = "/VBMV_A_L4_34.1dd88e38.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_28.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_28.935fba74.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_10.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_10.0325e35f.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_18.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_18.1d3f6fd7.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_11.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_11.b361fa1b.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_19.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_19.2279ac22.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_12.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_12.8e5b0a23.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_20.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_20.632f76e9.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_13.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_13.7c598e0e.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_21.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_21.b2e1deed.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_30.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_30.d003dd15.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_32.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_32.f7664b10.mp3";
 },{}],"assets/level4/audio/VBMV_A_L4_23.mp3":[function(require,module,exports) {
 module.exports = "/VBMV_A_L4_23.ede77428.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_31.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_31.8f19d944.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_33.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_33.7e4d5e97.mp3";
+},{}],"assets/level4/audio/VBMV_A_L4_34.mp3":[function(require,module,exports) {
+module.exports = "/VBMV_A_L4_34.1dd88e38.mp3";
 },{}],"src/constants/level4.js":[function(require,module,exports) {
 "use strict";
 
@@ -40507,73 +40522,61 @@ var level4Data = [
 [{
   id: 1,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 2,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 3,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 4,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 5,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 6,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 7,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 8,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 9,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 10,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 11,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 12,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }],
@@ -40581,73 +40584,61 @@ var level4Data = [
 [{
   id: 13,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 14,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 15,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 16,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 17,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 18,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 19,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 20,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 21,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 22,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 23,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 24,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }],
@@ -40655,73 +40646,61 @@ var level4Data = [
 [{
   id: 25,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 26,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 27,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 28,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 29,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 30,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 31,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 32,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 33,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 34,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 35,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 36,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }],
@@ -40729,73 +40708,61 @@ var level4Data = [
 [{
   id: 37,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 38,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 39,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 40,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 41,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 42,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 43,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 44,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 45,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 46,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 47,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 48,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }],
@@ -40803,73 +40770,61 @@ var level4Data = [
 [{
   id: 49,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 50,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 51,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 52,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 53,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 54,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 55,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 56,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 57,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 58,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 59,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 60,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }],
@@ -40877,73 +40832,61 @@ var level4Data = [
 [{
   id: 61,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 62,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 63,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 64,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 65,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 66,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 67,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 68,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 69,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 70,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 71,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 72,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }],
@@ -40951,73 +40894,61 @@ var level4Data = [
 [{
   id: 73,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 74,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 75,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 76,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 77,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 78,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 79,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 80,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 81,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 82,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 83,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 84,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }],
@@ -41025,73 +40956,61 @@ var level4Data = [
 [{
   id: 85,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 86,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 87,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 88,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 89,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 90,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 91,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 92,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 93,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 94,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 95,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }, {
   id: 96,
   img: require("../../assets/level4/images/Images/cauliflower_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_27.mp3"),
   vegetable_name: "cauliflower"
 }],
@@ -41099,73 +41018,61 @@ var level4Data = [
 [{
   id: 97,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 98,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 99,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 100,
   img: require("../../assets/level4/images/Images/cabbage_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_24.mp3"),
   vegetable_name: "cabbage"
 }, {
   id: 101,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 102,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 103,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 104,
   img: require("../../assets/level4/images/Images/brinjal_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_26.mp3"),
   vegetable_name: "brinjal"
 }, {
   id: 105,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 106,
   img: require("../../assets/level4/images/Images/ladyfinger_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_25.mp3"),
   vegetable_name: "ladyfinger"
 }, {
   id: 107,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }, {
   id: 108,
   img: require("../../assets/level4/images/Images/pumpkin_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_14.mp3"),
   vegetable_name: "pumpkin"
 }],
@@ -41173,73 +41080,61 @@ var level4Data = [
 [{
   id: 109,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 110,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 111,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 112,
   img: require("../../assets/level4/images/Images/zucchini_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_16.mp3"),
   vegetable_name: "zucchini"
 }, {
   id: 113,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 114,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 115,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 116,
   img: require("../../assets/level4/images/Images/capsicum_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_17.mp3"),
   vegetable_name: "capsicum"
 }, {
   id: 117,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 118,
   img: require("../../assets/level4/images/Images/yam_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_28.mp3"),
   vegetable_name: "yam"
 }, {
   id: 119,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }, {
   id: 120,
   img: require("../../assets/level4/images/Images/peas_level_4.png"),
-  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   correct_answer: require("../../assets/level4/audio/VBMV_A_L4_15.mp3"),
   vegetable_name: "greenpeas"
 }]];
@@ -41248,21 +41143,25 @@ var level4Basket = [[{
   id: 1,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_10.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   basket_name: "pumpkin"
 }, {
   id: 2,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }, {
   id: 3,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_12.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   basket_name: "zucchini"
 }, {
   id: 4,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3"),
   basket_name: "capsicum"
 }],
 // 2 Set
@@ -41270,21 +41169,25 @@ var level4Basket = [[{
   id: 5,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_7.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   basket_name: "cabbage"
 }, {
   id: 6,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_5.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   basket_name: "brinjal"
 }, {
   id: 7,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_23.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   basket_name: "ladyfinger"
 }, {
   id: 8,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_6.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_33.mp3"),
   basket_name: "cauliflower"
 }],
 // 3 Set
@@ -41292,21 +41195,25 @@ var level4Basket = [[{
   id: 9,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_4.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   basket_name: "yam"
 }, {
   id: 10,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_12.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   basket_name: "zucchini"
 }, {
   id: 11,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
-  basket_name: "capsicum"
+  basket_name: "capsicum",
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3")
 }, {
   id: 12,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }],
 // 4 Set
@@ -41314,21 +41221,25 @@ var level4Basket = [[{
   id: 13,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_12.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   basket_name: "zucchini"
 }, {
   id: 14,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_7.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   basket_name: "cabbage"
 }, {
   id: 15,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_23.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   basket_name: "ladyfinger"
 }, {
   id: 16,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_5.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   basket_name: "brinjal"
 }],
 // 5 Set
@@ -41336,21 +41247,25 @@ var level4Basket = [[{
   id: 17,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
-  basket_name: "capsicum"
+  basket_name: "capsicum",
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3")
 }, {
   id: 18,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }, {
   id: 19,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_4.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   basket_name: "yam"
 }, {
   id: 20,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_10.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   basket_name: "pumpkin"
 }],
 // 6 Set
@@ -41358,21 +41273,25 @@ var level4Basket = [[{
   id: 21,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_23.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   basket_name: "ladyfinger"
 }, {
   id: 22,
   basket: require("../../assets/level4/images/basket_level_4.png"),
-  basket_sound: require("../../assets/level4/audio/VBMV_A_L4_7.mp3"),
-  basket_name: "cabbage"
+  basket_sound: require("../../assets/level4/audio/VBMV_A_L4_5.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
+  basket_name: "brinjal"
 }, {
   id: 23,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_4.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   basket_name: "yam"
 }, {
   id: 24,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_7.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   basket_name: "cabbage"
 }],
 // 7 Set
@@ -41380,21 +41299,25 @@ var level4Basket = [[{
   id: 25,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }, {
   id: 26,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
-  basket_name: "capsicum"
+  basket_name: "capsicum",
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3")
 }, {
   id: 27,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_6.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_33.mp3"),
   basket_name: "cauliflower"
 }, {
   id: 28,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_10.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   basket_name: "pumpkin"
 }],
 // 8 Set
@@ -41402,21 +41325,25 @@ var level4Basket = [[{
   id: 29,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
-  basket_name: "capsicum"
+  basket_name: "capsicum",
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3")
 }, {
   id: 30,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_4.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   basket_name: "yam"
 }, {
   id: 31,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }, {
   id: 32,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_6.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_33.mp3"),
   basket_name: "cauliflower"
 }],
 // 9 Set
@@ -41424,21 +41351,25 @@ var level4Basket = [[{
   id: 33,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_7.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_30.mp3"),
   basket_name: "cabbage"
 }, {
   id: 34,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_5.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_32.mp3"),
   basket_name: "brinjal"
 }, {
   id: 35,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_23.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_31.mp3"),
   basket_name: "ladyfinger"
 }, {
   id: 36,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_10.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_18.mp3"),
   basket_name: "pumpkin"
 }],
 // 10 Set
@@ -41446,2747 +41377,37 @@ var level4Basket = [[{
   id: 37,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_12.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_20.mp3"),
   basket_name: "zucchini"
 }, {
   id: 38,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_13.mp3"),
-  basket_name: "capsicum"
+  basket_name: "capsicum",
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_21.mp3")
 }, {
   id: 39,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_4.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_34.mp3"),
   basket_name: "yam"
 }, {
   id: 40,
   basket: require("../../assets/level4/images/basket_level_4.png"),
   basket_sound: require("../../assets/level4/audio/VBMV_A_L4_11.mp3"),
+  try_again_sound: require("../../assets/level4/audio/VBMV_A_L4_19.mp3"),
   basket_name: "greenpeas"
 }]];
 exports.level4Basket = level4Basket;
-},{"../../assets/level4/images/Images/brinjal_level_4.png":"assets/level4/images/Images/brinjal_level_4.png","../../assets/common/textures/interactions/Hand_Cursor3.png":"assets/common/textures/interactions/Hand_Cursor3.png","../../assets/level4/images/basket_level_4.png":"assets/level4/images/basket_level_4.png","../../assets/level4/images/Images/yam_level_4.png":"assets/level4/images/Images/yam_level_4.png","../../assets/level4/images/Images/cabbage_level_4.png":"assets/level4/images/Images/cabbage_level_4.png","../../assets/level4/images/Images/cauliflower_level_4.png":"assets/level4/images/Images/cauliflower_level_4.png","../../assets/level4/audio/VBMV_A_L4_4.mp3":"assets/level4/audio/VBMV_A_L4_4.mp3","../../assets/level4/audio/VBMV_A_L4_5.mp3":"assets/level4/audio/VBMV_A_L4_5.mp3","../../assets/level4/audio/VBMV_A_L4_6.mp3":"assets/level4/audio/VBMV_A_L4_6.mp3","../../assets/level4/audio/VBMV_A_L4_7.mp3":"assets/level4/audio/VBMV_A_L4_7.mp3","../../assets/level4/images/Images/pumpkin_level_4.png":"assets/level4/images/Images/pumpkin_level_4.png","../../assets/level4/audio/VBMV_A_L4_18.mp3":"assets/level4/audio/VBMV_A_L4_18.mp3","../../assets/level4/audio/VBMV_A_L4_14.mp3":"assets/level4/audio/VBMV_A_L4_14.mp3","../../assets/level4/images/Images/peas_level_4.png":"assets/level4/images/Images/peas_level_4.png","../../assets/level4/audio/VBMV_A_L4_19.mp3":"assets/level4/audio/VBMV_A_L4_19.mp3","../../assets/level4/audio/VBMV_A_L4_15.mp3":"assets/level4/audio/VBMV_A_L4_15.mp3","../../assets/level4/images/Images/zucchini_level_4.png":"assets/level4/images/Images/zucchini_level_4.png","../../assets/level4/audio/VBMV_A_L4_20.mp3":"assets/level4/audio/VBMV_A_L4_20.mp3","../../assets/level4/audio/VBMV_A_L4_16.mp3":"assets/level4/audio/VBMV_A_L4_16.mp3","../../assets/level4/images/Images/capsicum_level_4.png":"assets/level4/images/Images/capsicum_level_4.png","../../assets/level4/audio/VBMV_A_L4_21.mp3":"assets/level4/audio/VBMV_A_L4_21.mp3","../../assets/level4/audio/VBMV_A_L4_17.mp3":"assets/level4/audio/VBMV_A_L4_17.mp3","../../assets/level4/audio/VBMV_A_L4_30.mp3":"assets/level4/audio/VBMV_A_L4_30.mp3","../../assets/level4/audio/VBMV_A_L4_24.mp3":"assets/level4/audio/VBMV_A_L4_24.mp3","../../assets/level4/audio/VBMV_A_L4_32.mp3":"assets/level4/audio/VBMV_A_L4_32.mp3","../../assets/level4/audio/VBMV_A_L4_26.mp3":"assets/level4/audio/VBMV_A_L4_26.mp3","../../assets/level4/images/Images/ladyfinger_level_4.png":"assets/level4/images/Images/ladyfinger_level_4.png","../../assets/level4/audio/VBMV_A_L4_31.mp3":"assets/level4/audio/VBMV_A_L4_31.mp3","../../assets/level4/audio/VBMV_A_L4_25.mp3":"assets/level4/audio/VBMV_A_L4_25.mp3","../../assets/level4/audio/VBMV_A_L4_27.mp3":"assets/level4/audio/VBMV_A_L4_27.mp3","../../assets/level4/audio/VBMV_A_L4_34.mp3":"assets/level4/audio/VBMV_A_L4_34.mp3","../../assets/level4/audio/VBMV_A_L4_28.mp3":"assets/level4/audio/VBMV_A_L4_28.mp3","../../assets/level4/audio/VBMV_A_L4_10.mp3":"assets/level4/audio/VBMV_A_L4_10.mp3","../../assets/level4/audio/VBMV_A_L4_11.mp3":"assets/level4/audio/VBMV_A_L4_11.mp3","../../assets/level4/audio/VBMV_A_L4_12.mp3":"assets/level4/audio/VBMV_A_L4_12.mp3","../../assets/level4/audio/VBMV_A_L4_13.mp3":"assets/level4/audio/VBMV_A_L4_13.mp3","../../assets/level4/audio/VBMV_A_L4_23.mp3":"assets/level4/audio/VBMV_A_L4_23.mp3"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-'use strict';
-
-if ("development" !== "production") {
-  (function () {
-    'use strict';
-
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-    // (unstable) APIs that have been removed. Can we remove the symbols?
-
-    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-    function isValidElementType(type) {
-      return typeof type === 'string' || typeof type === 'function' ||
-      // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-    }
-    function typeOf(object) {
-      if (typeof object === 'object' && object !== null) {
-        var $$typeof = object.$$typeof;
-        switch ($$typeof) {
-          case REACT_ELEMENT_TYPE:
-            var type = object.type;
-            switch (type) {
-              case REACT_ASYNC_MODE_TYPE:
-              case REACT_CONCURRENT_MODE_TYPE:
-              case REACT_FRAGMENT_TYPE:
-              case REACT_PROFILER_TYPE:
-              case REACT_STRICT_MODE_TYPE:
-              case REACT_SUSPENSE_TYPE:
-                return type;
-              default:
-                var $$typeofType = type && type.$$typeof;
-                switch ($$typeofType) {
-                  case REACT_CONTEXT_TYPE:
-                  case REACT_FORWARD_REF_TYPE:
-                  case REACT_LAZY_TYPE:
-                  case REACT_MEMO_TYPE:
-                  case REACT_PROVIDER_TYPE:
-                    return $$typeofType;
-                  default:
-                    return $$typeof;
-                }
-            }
-          case REACT_PORTAL_TYPE:
-            return $$typeof;
-        }
-      }
-      return undefined;
-    } // AsyncMode is deprecated along with isAsyncMode
-
-    var AsyncMode = REACT_ASYNC_MODE_TYPE;
-    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-    function isAsyncMode(object) {
-      {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-          hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-          console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-        }
-      }
-      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-    }
-    function isConcurrentMode(object) {
-      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-    }
-    function isContextConsumer(object) {
-      return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-      return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-      return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-      return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-      return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-      return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-      return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-      return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-      return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-      return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-      return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    exports.AsyncMode = AsyncMode;
-    exports.ConcurrentMode = ConcurrentMode;
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-  })();
-}
-},{}],"node_modules/react-is/index.js":[function(require,module,exports) {
-'use strict';
-
-if ("development" === 'production') {
-  module.exports = require('./cjs/react-is.production.min.js');
-} else {
-  module.exports = require('./cjs/react-is.development.js');
-}
-},{"./cjs/react-is.development.js":"node_modules/react-is/cjs/react-is.development.js"}],"node_modules/object-assign/index.js":[function(require,module,exports) {
-/*
+},{"../../assets/level4/images/Images/brinjal_level_4.png":"assets/level4/images/Images/brinjal_level_4.png","../../assets/common/textures/interactions/Hand_Cursor3.png":"assets/common/textures/interactions/Hand_Cursor3.png","../../assets/level4/images/basket_level_4.png":"assets/level4/images/basket_level_4.png","../../assets/level4/images/Images/yam_level_4.png":"assets/level4/images/Images/yam_level_4.png","../../assets/level4/images/Images/cabbage_level_4.png":"assets/level4/images/Images/cabbage_level_4.png","../../assets/level4/images/Images/cauliflower_level_4.png":"assets/level4/images/Images/cauliflower_level_4.png","../../assets/level4/audio/VBMV_A_L4_4.mp3":"assets/level4/audio/VBMV_A_L4_4.mp3","../../assets/level4/audio/VBMV_A_L4_5.mp3":"assets/level4/audio/VBMV_A_L4_5.mp3","../../assets/level4/audio/VBMV_A_L4_6.mp3":"assets/level4/audio/VBMV_A_L4_6.mp3","../../assets/level4/audio/VBMV_A_L4_7.mp3":"assets/level4/audio/VBMV_A_L4_7.mp3","../../assets/level4/images/Images/pumpkin_level_4.png":"assets/level4/images/Images/pumpkin_level_4.png","../../assets/level4/audio/VBMV_A_L4_14.mp3":"assets/level4/audio/VBMV_A_L4_14.mp3","../../assets/level4/images/Images/peas_level_4.png":"assets/level4/images/Images/peas_level_4.png","../../assets/level4/audio/VBMV_A_L4_15.mp3":"assets/level4/audio/VBMV_A_L4_15.mp3","../../assets/level4/images/Images/zucchini_level_4.png":"assets/level4/images/Images/zucchini_level_4.png","../../assets/level4/audio/VBMV_A_L4_16.mp3":"assets/level4/audio/VBMV_A_L4_16.mp3","../../assets/level4/images/Images/capsicum_level_4.png":"assets/level4/images/Images/capsicum_level_4.png","../../assets/level4/audio/VBMV_A_L4_17.mp3":"assets/level4/audio/VBMV_A_L4_17.mp3","../../assets/level4/audio/VBMV_A_L4_24.mp3":"assets/level4/audio/VBMV_A_L4_24.mp3","../../assets/level4/audio/VBMV_A_L4_26.mp3":"assets/level4/audio/VBMV_A_L4_26.mp3","../../assets/level4/images/Images/ladyfinger_level_4.png":"assets/level4/images/Images/ladyfinger_level_4.png","../../assets/level4/audio/VBMV_A_L4_25.mp3":"assets/level4/audio/VBMV_A_L4_25.mp3","../../assets/level4/audio/VBMV_A_L4_27.mp3":"assets/level4/audio/VBMV_A_L4_27.mp3","../../assets/level4/audio/VBMV_A_L4_28.mp3":"assets/level4/audio/VBMV_A_L4_28.mp3","../../assets/level4/audio/VBMV_A_L4_10.mp3":"assets/level4/audio/VBMV_A_L4_10.mp3","../../assets/level4/audio/VBMV_A_L4_18.mp3":"assets/level4/audio/VBMV_A_L4_18.mp3","../../assets/level4/audio/VBMV_A_L4_11.mp3":"assets/level4/audio/VBMV_A_L4_11.mp3","../../assets/level4/audio/VBMV_A_L4_19.mp3":"assets/level4/audio/VBMV_A_L4_19.mp3","../../assets/level4/audio/VBMV_A_L4_12.mp3":"assets/level4/audio/VBMV_A_L4_12.mp3","../../assets/level4/audio/VBMV_A_L4_20.mp3":"assets/level4/audio/VBMV_A_L4_20.mp3","../../assets/level4/audio/VBMV_A_L4_13.mp3":"assets/level4/audio/VBMV_A_L4_13.mp3","../../assets/level4/audio/VBMV_A_L4_21.mp3":"assets/level4/audio/VBMV_A_L4_21.mp3","../../assets/level4/audio/VBMV_A_L4_30.mp3":"assets/level4/audio/VBMV_A_L4_30.mp3","../../assets/level4/audio/VBMV_A_L4_32.mp3":"assets/level4/audio/VBMV_A_L4_32.mp3","../../assets/level4/audio/VBMV_A_L4_23.mp3":"assets/level4/audio/VBMV_A_L4_23.mp3","../../assets/level4/audio/VBMV_A_L4_31.mp3":"assets/level4/audio/VBMV_A_L4_31.mp3","../../assets/level4/audio/VBMV_A_L4_33.mp3":"assets/level4/audio/VBMV_A_L4_33.mp3","../../assets/level4/audio/VBMV_A_L4_34.mp3":"assets/level4/audio/VBMV_A_L4_34.mp3"}],"node_modules/react-drag-drop-container/lib/bundle.js":[function(require,module,exports) {
+var define;
+!function(e,t){if("object"==typeof exports&&"object"==typeof module)module.exports=t();else if("function"==typeof define&&define.amd)define([],t);else{var n=t();for(var r in n)("object"==typeof exports?exports:e)[r]=n[r]}}(this,function(){return function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=17)}([function(e,t,n){"use strict";function r(e){return void 0!==e.ref}function o(e){return void 0!==e.key}var i=n(2),a=n(10),u=(n(4),n(13),Object.prototype.hasOwnProperty),s=n(11),l={key:!0,ref:!0,__self:!0,__source:!0},c=function(e,t,n,r,o,i,a){var u={$$typeof:s,type:e,key:t,ref:n,props:a,_owner:i};return u};c.createElement=function(e,t,n){var i,s={},p=null,f=null;if(null!=t){r(t)&&(f=t.ref),o(t)&&(p=""+t.key),void 0===t.__self?null:t.__self,void 0===t.__source?null:t.__source;for(i in t)u.call(t,i)&&!l.hasOwnProperty(i)&&(s[i]=t[i])}var d=arguments.length-2;if(1===d)s.children=n;else if(d>1){for(var h=Array(d),g=0;g<d;g++)h[g]=arguments[g+2];s.children=h}if(e&&e.defaultProps){var y=e.defaultProps;for(i in y)void 0===s[i]&&(s[i]=y[i])}return c(e,p,f,0,0,a.current,s)},c.createFactory=function(e){var t=c.createElement.bind(null,e);return t.type=e,t},c.cloneAndReplaceKey=function(e,t){return c(e.type,t,e.ref,e._self,e._source,e._owner,e.props)},c.cloneElement=function(e,t,n){var s,p=i({},e.props),f=e.key,d=e.ref,h=(e._self,e._source,e._owner);if(null!=t){r(t)&&(d=t.ref,h=a.current),o(t)&&(f=""+t.key);var g;e.type&&e.type.defaultProps&&(g=e.type.defaultProps);for(s in t)u.call(t,s)&&!l.hasOwnProperty(s)&&(void 0===t[s]&&void 0!==g?p[s]=g[s]:p[s]=t[s])}var y=arguments.length-2;if(1===y)p.children=n;else if(y>1){for(var m=Array(y),v=0;v<y;v++)m[v]=arguments[v+2];p.children=m}return c(e.type,f,d,0,0,h,p)},c.isValidElement=function(e){return"object"==typeof e&&null!==e&&e.$$typeof===s},e.exports=c},function(e,t,n){"use strict";function r(e,t,n,r,i,a,u,s){if(o(t),!e){var l;if(void 0===t)l=new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var c=[n,r,i,a,u,s],p=0;l=new Error(t.replace(/%s/g,function(){return c[p++]})),l.name="Invariant Violation"}throw l.framesToPop=1,l}}var o=function(e){};e.exports=r},function(e,t,n){"use strict";function r(e){if(null===e||void 0===e)throw new TypeError("Object.assign cannot be called with null or undefined");return Object(e)}/*
 object-assign
 (c) Sindre Sorhus
 @license MIT
 */
-
-'use strict';
-
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-function toObject(val) {
-  if (val === null || val === undefined) {
-    throw new TypeError('Object.assign cannot be called with null or undefined');
-  }
-  return Object(val);
-}
-function shouldUseNative() {
-  try {
-    if (!Object.assign) {
-      return false;
-    }
-
-    // Detect buggy property enumeration order in older V8 versions.
-
-    // https://bugs.chromium.org/p/v8/issues/detail?id=4118
-    var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
-    test1[5] = 'de';
-    if (Object.getOwnPropertyNames(test1)[0] === '5') {
-      return false;
-    }
-
-    // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-    var test2 = {};
-    for (var i = 0; i < 10; i++) {
-      test2['_' + String.fromCharCode(i)] = i;
-    }
-    var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-      return test2[n];
-    });
-    if (order2.join('') !== '0123456789') {
-      return false;
-    }
-
-    // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-    var test3 = {};
-    'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-      test3[letter] = letter;
-    });
-    if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
-      return false;
-    }
-    return true;
-  } catch (err) {
-    // We don't expect any of the above to throw, but better to be safe.
-    return false;
-  }
-}
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-  var from;
-  var to = toObject(target);
-  var symbols;
-  for (var s = 1; s < arguments.length; s++) {
-    from = Object(arguments[s]);
-    for (var key in from) {
-      if (hasOwnProperty.call(from, key)) {
-        to[key] = from[key];
-      }
-    }
-    if (getOwnPropertySymbols) {
-      symbols = getOwnPropertySymbols(from);
-      for (var i = 0; i < symbols.length; i++) {
-        if (propIsEnumerable.call(from, symbols[i])) {
-          to[symbols[i]] = from[symbols[i]];
-        }
-      }
-    }
-  }
-  return to;
-};
-},{}],"node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-'use strict';
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-},{}],"node_modules/prop-types/lib/has.js":[function(require,module,exports) {
-module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
-
-},{}],"node_modules/prop-types/checkPropTypes.js":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-'use strict';
-
-var printWarning = function () {};
-if ("development" !== 'production') {
-  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
-  var loggedTypeFailures = {};
-  var has = require('./lib/has');
-  printWarning = function (text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {/**/}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if ("development" !== 'production') {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + typeof error + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-          var stack = getStack ? getStack() : '';
-          printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
-        }
-      }
-    }
-  }
-}
-
-/**
- * Resets warning cache when testing.
- *
- * @private
- */
-checkPropTypes.resetWarningCache = function () {
-  if ("development" !== 'production') {
-    loggedTypeFailures = {};
-  }
-};
-module.exports = checkPropTypes;
-},{"./lib/ReactPropTypesSecret":"node_modules/prop-types/lib/ReactPropTypesSecret.js","./lib/has":"node_modules/prop-types/lib/has.js"}],"node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-'use strict';
-
-var ReactIs = require('react-is');
-var assign = require('object-assign');
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
-var has = require('./lib/has');
-var checkPropTypes = require('./checkPropTypes');
-var printWarning = function () {};
-if ("development" !== 'production') {
-  printWarning = function (text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-module.exports = function (isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bigint: createPrimitiveTypeChecker('bigint'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message, data) {
-    this.message = message;
-    this.data = data && typeof data === 'object' ? data : {};
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-  function createChainableTypeChecker(validate) {
-    if ("development" !== 'production') {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ("development" !== 'production' && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (!manualPropTypeCallCache[cacheKey] &&
-          // Avoid spamming the console because they are often not actionable except for lib authors
-          manualPropTypeWarningCount < 3) {
-            printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-    return chainedCheckType;
-  }
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'), {
-          expectedType: expectedType
-        });
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      if ("development" !== 'production') {
-        if (arguments.length > 1) {
-          printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
-        } else {
-          printWarning('Invalid argument supplied to oneOf, expected an array.');
-        }
-      }
-      return emptyFunctionThatReturnsNull;
-    }
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-        var type = getPreciseType(value);
-        if (type === 'symbol') {
-          return String(value);
-        }
-        return value;
-      });
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (has(propValue, key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-      "development" !== 'production' ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
-      return emptyFunctionThatReturnsNull;
-    }
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
-        return emptyFunctionThatReturnsNull;
-      }
-    }
-    function validate(props, propName, componentName, location, propFullName) {
-      var expectedTypes = [];
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
-        if (checkerResult == null) {
-          return null;
-        }
-        if (checkerResult.data && has(checkerResult.data, 'expectedType')) {
-          expectedTypes.push(checkerResult.data.expectedType);
-        }
-      }
-      var expectedTypesMessage = expectedTypes.length > 0 ? ', expected one of type [' + expectedTypes.join(', ') + ']' : '';
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`' + expectedTypesMessage + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function invalidValidatorError(componentName, location, propFullName, key, type) {
-    return new PropTypeError((componentName || 'React class') + ': ' + location + ' type `' + propFullName + '.' + key + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + type + '`.');
-  }
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (typeof checker !== 'function') {
-          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function createStrictShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      // We need to check all keys in case some are required but missing from props.
-      var allKeys = assign({}, props[propName], shapeTypes);
-      for (var key in allKeys) {
-        var checker = shapeTypes[key];
-        if (has(shapeTypes, key) && typeof checker !== 'function') {
-          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-        }
-        if (!checker) {
-          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-  function isNode(propValue) {
-    switch (typeof propValue) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-        return true;
-      default:
-        return false;
-    }
-  }
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // falsy value can't be a Symbol
-    if (!propValue) {
-      return false;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-  return ReactPropTypes;
-};
-},{"react-is":"node_modules/react-is/index.js","object-assign":"node_modules/object-assign/index.js","./lib/ReactPropTypesSecret":"node_modules/prop-types/lib/ReactPropTypesSecret.js","./lib/has":"node_modules/prop-types/lib/has.js","./checkPropTypes":"node_modules/prop-types/checkPropTypes.js"}],"node_modules/prop-types/index.js":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if ("development" !== 'production') {
-  var ReactIs = require('react-is');
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = require('./factoryWithTypeCheckers')(ReactIs.isElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = require('./factoryWithThrowingShims')();
-}
-},{"react-is":"node_modules/react-is/index.js","./factoryWithTypeCheckers":"node_modules/prop-types/factoryWithTypeCheckers.js"}],"node_modules/clsx/dist/clsx.m.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.clsx = clsx;
-exports.default = void 0;
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function r(e) {
-  var t,
-    f,
-    n = "";
-  if ("string" == typeof e || "number" == typeof e) n += e;else if ("object" == _typeof(e)) if (Array.isArray(e)) for (t = 0; t < e.length; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);else for (t in e) e[t] && (n && (n += " "), n += t);
-  return n;
-}
-function clsx() {
-  for (var e, t, f = 0, n = ""; f < arguments.length;) (e = arguments[f++]) && (t = r(e)) && (n && (n += " "), n += t);
-  return n;
-}
-var _default = clsx;
-exports.default = _default;
-},{}],"node_modules/react-draggable/build/cjs/utils/shims.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.dontSetMe = dontSetMe;
-exports.findInArray = findInArray;
-exports.int = int;
-exports.isFunction = isFunction;
-exports.isNum = isNum;
-
-// @credits https://gist.github.com/rogozhnikoff/a43cfed27c41e4e68cdc
-function findInArray(array
-/*: Array<any> | TouchList*/
-, callback
-/*: Function*/
-)
-/*: any*/
-{
-  for (var i = 0, length = array.length; i < length; i++) {
-    if (callback.apply(callback, [array[i], i, array])) return array[i];
-  }
-}
-
-function isFunction(func
-/*: any*/
-)
-/*: boolean %checks*/
-{
-  // $FlowIgnore[method-unbinding]
-  return typeof func === 'function' || Object.prototype.toString.call(func) === '[object Function]';
-}
-
-function isNum(num
-/*: any*/
-)
-/*: boolean %checks*/
-{
-  return typeof num === 'number' && !isNaN(num);
-}
-
-function int(a
-/*: string*/
-)
-/*: number*/
-{
-  return parseInt(a, 10);
-}
-
-function dontSetMe(props
-/*: Object*/
-, propName
-/*: string*/
-, componentName
-/*: string*/
-)
-/*: ?Error*/
-{
-  if (props[propName]) {
-    return new Error("Invalid prop ".concat(propName, " passed to ").concat(componentName, " - do not set this, set it on the child."));
-  }
-}
-},{}],"node_modules/react-draggable/build/cjs/utils/getPrefix.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.browserPrefixToKey = browserPrefixToKey;
-exports.browserPrefixToStyle = browserPrefixToStyle;
-exports.default = void 0;
-exports.getPrefix = getPrefix;
-var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
-
-function getPrefix()
-/*: string*/
-{
-  var _window$document, _window$document$docu;
-
-  var prop
-  /*: string*/
-  = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'transform';
-  // Ensure we're running in an environment where there is actually a global
-  // `window` obj
-  if (typeof window === 'undefined') return ''; // If we're in a pseudo-browser server-side environment, this access
-  // path may not exist, so bail out if it doesn't.
-
-  var style = (_window$document = window.document) === null || _window$document === void 0 ? void 0 : (_window$document$docu = _window$document.documentElement) === null || _window$document$docu === void 0 ? void 0 : _window$document$docu.style;
-  if (!style) return '';
-  if (prop in style) return '';
-
-  for (var i = 0; i < prefixes.length; i++) {
-    if (browserPrefixToKey(prop, prefixes[i]) in style) return prefixes[i];
-  }
-
-  return '';
-}
-
-function browserPrefixToKey(prop
-/*: string*/
-, prefix
-/*: string*/
-)
-/*: string*/
-{
-  return prefix ? "".concat(prefix).concat(kebabToTitleCase(prop)) : prop;
-}
-
-function browserPrefixToStyle(prop
-/*: string*/
-, prefix
-/*: string*/
-)
-/*: string*/
-{
-  return prefix ? "-".concat(prefix.toLowerCase(), "-").concat(prop) : prop;
-}
-
-function kebabToTitleCase(str
-/*: string*/
-)
-/*: string*/
-{
-  var out = '';
-  var shouldCapitalize = true;
-
-  for (var i = 0; i < str.length; i++) {
-    if (shouldCapitalize) {
-      out += str[i].toUpperCase();
-      shouldCapitalize = false;
-    } else if (str[i] === '-') {
-      shouldCapitalize = true;
-    } else {
-      out += str[i];
-    }
-  }
-
-  return out;
-} // Default export is the prefix itself, like 'Moz', 'Webkit', etc
-// Note that you may have to re-test for certain things; for instance, Chrome 50
-// can handle unprefixed `transform`, but not unprefixed `user-select`
-
-
-var _default = (getPrefix()
-/*: string*/
-);
-
-exports.default = _default;
-},{}],"node_modules/react-draggable/build/cjs/utils/domFns.js":[function(require,module,exports) {
-"use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.addClassName = addClassName;
-exports.addEvent = addEvent;
-exports.addUserSelectStyles = addUserSelectStyles;
-exports.createCSSTransform = createCSSTransform;
-exports.createSVGTransform = createSVGTransform;
-exports.getTouch = getTouch;
-exports.getTouchIdentifier = getTouchIdentifier;
-exports.getTranslation = getTranslation;
-exports.innerHeight = innerHeight;
-exports.innerWidth = innerWidth;
-exports.matchesSelector = matchesSelector;
-exports.matchesSelectorAndParentsTo = matchesSelectorAndParentsTo;
-exports.offsetXYFromParent = offsetXYFromParent;
-exports.outerHeight = outerHeight;
-exports.outerWidth = outerWidth;
-exports.removeClassName = removeClassName;
-exports.removeEvent = removeEvent;
-exports.removeUserSelectStyles = removeUserSelectStyles;
-
-var _shims = require("./shims");
-
-var _getPrefix = _interopRequireWildcard(require("./getPrefix"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var matchesSelectorFunc = '';
-
-function matchesSelector(el
-/*: Node*/
-, selector
-/*: string*/
-)
-/*: boolean*/
-{
-  if (!matchesSelectorFunc) {
-    matchesSelectorFunc = (0, _shims.findInArray)(['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'], function (method) {
-      // $FlowIgnore: Doesn't think elements are indexable
-      return (0, _shims.isFunction)(el[method]);
-    });
-  } // Might not be found entirely (not an Element?) - in that case, bail
-  // $FlowIgnore: Doesn't think elements are indexable
-
-
-  if (!(0, _shims.isFunction)(el[matchesSelectorFunc])) return false; // $FlowIgnore: Doesn't think elements are indexable
-
-  return el[matchesSelectorFunc](selector);
-} // Works up the tree to the draggable itself attempting to match selector.
-
-
-function matchesSelectorAndParentsTo(el
-/*: Node*/
-, selector
-/*: string*/
-, baseNode
-/*: Node*/
-)
-/*: boolean*/
-{
-  var node = el;
-
-  do {
-    if (matchesSelector(node, selector)) return true;
-    if (node === baseNode) return false;
-    node = node.parentNode;
-  } while (node);
-
-  return false;
-}
-
-function addEvent(el
-/*: ?Node*/
-, event
-/*: string*/
-, handler
-/*: Function*/
-, inputOptions
-/*: Object*/
-)
-/*: void*/
-{
-  if (!el) return;
-
-  var options = _objectSpread({
-    capture: true
-  }, inputOptions); // $FlowIgnore[method-unbinding]
-
-
-  if (el.addEventListener) {
-    el.addEventListener(event, handler, options);
-  } else if (el.attachEvent) {
-    el.attachEvent('on' + event, handler);
-  } else {
-    // $FlowIgnore: Doesn't think elements are indexable
-    el['on' + event] = handler;
-  }
-}
-
-function removeEvent(el
-/*: ?Node*/
-, event
-/*: string*/
-, handler
-/*: Function*/
-, inputOptions
-/*: Object*/
-)
-/*: void*/
-{
-  if (!el) return;
-
-  var options = _objectSpread({
-    capture: true
-  }, inputOptions); // $FlowIgnore[method-unbinding]
-
-
-  if (el.removeEventListener) {
-    el.removeEventListener(event, handler, options);
-  } else if (el.detachEvent) {
-    el.detachEvent('on' + event, handler);
-  } else {
-    // $FlowIgnore: Doesn't think elements are indexable
-    el['on' + event] = null;
-  }
-}
-
-function outerHeight(node
-/*: HTMLElement*/
-)
-/*: number*/
-{
-  // This is deliberately excluding margin for our calculations, since we are using
-  // offsetTop which is including margin. See getBoundPosition
-  var height = node.clientHeight;
-  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-  height += (0, _shims.int)(computedStyle.borderTopWidth);
-  height += (0, _shims.int)(computedStyle.borderBottomWidth);
-  return height;
-}
-
-function outerWidth(node
-/*: HTMLElement*/
-)
-/*: number*/
-{
-  // This is deliberately excluding margin for our calculations, since we are using
-  // offsetLeft which is including margin. See getBoundPosition
-  var width = node.clientWidth;
-  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-  width += (0, _shims.int)(computedStyle.borderLeftWidth);
-  width += (0, _shims.int)(computedStyle.borderRightWidth);
-  return width;
-}
-
-function innerHeight(node
-/*: HTMLElement*/
-)
-/*: number*/
-{
-  var height = node.clientHeight;
-  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-  height -= (0, _shims.int)(computedStyle.paddingTop);
-  height -= (0, _shims.int)(computedStyle.paddingBottom);
-  return height;
-}
-
-function innerWidth(node
-/*: HTMLElement*/
-)
-/*: number*/
-{
-  var width = node.clientWidth;
-  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-  width -= (0, _shims.int)(computedStyle.paddingLeft);
-  width -= (0, _shims.int)(computedStyle.paddingRight);
-  return width;
-}
-/*:: interface EventWithOffset {
-  clientX: number, clientY: number
-}*/
-
-
-// Get from offsetParent
-function offsetXYFromParent(evt
-/*: EventWithOffset*/
-, offsetParent
-/*: HTMLElement*/
-, scale
-/*: number*/
-)
-/*: ControlPosition*/
-{
-  var isBody = offsetParent === offsetParent.ownerDocument.body;
-  var offsetParentRect = isBody ? {
-    left: 0,
-    top: 0
-  } : offsetParent.getBoundingClientRect();
-  var x = (evt.clientX + offsetParent.scrollLeft - offsetParentRect.left) / scale;
-  var y = (evt.clientY + offsetParent.scrollTop - offsetParentRect.top) / scale;
-  return {
-    x: x,
-    y: y
-  };
-}
-
-function createCSSTransform(controlPos
-/*: ControlPosition*/
-, positionOffset
-/*: PositionOffsetControlPosition*/
-)
-/*: Object*/
-{
-  var translation = getTranslation(controlPos, positionOffset, 'px');
-  return _defineProperty({}, (0, _getPrefix.browserPrefixToKey)('transform', _getPrefix.default), translation);
-}
-
-function createSVGTransform(controlPos
-/*: ControlPosition*/
-, positionOffset
-/*: PositionOffsetControlPosition*/
-)
-/*: string*/
-{
-  var translation = getTranslation(controlPos, positionOffset, '');
-  return translation;
-}
-
-function getTranslation(_ref2, positionOffset
-/*: PositionOffsetControlPosition*/
-, unitSuffix
-/*: string*/
-)
-/*: string*/
-{
-  var x = _ref2.x,
-      y = _ref2.y;
-  var translation = "translate(".concat(x).concat(unitSuffix, ",").concat(y).concat(unitSuffix, ")");
-
-  if (positionOffset) {
-    var defaultX = "".concat(typeof positionOffset.x === 'string' ? positionOffset.x : positionOffset.x + unitSuffix);
-    var defaultY = "".concat(typeof positionOffset.y === 'string' ? positionOffset.y : positionOffset.y + unitSuffix);
-    translation = "translate(".concat(defaultX, ", ").concat(defaultY, ")") + translation;
-  }
-
-  return translation;
-}
-
-function getTouch(e
-/*: MouseTouchEvent*/
-, identifier
-/*: number*/
-)
-/*: ?{clientX: number, clientY: number}*/
-{
-  return e.targetTouches && (0, _shims.findInArray)(e.targetTouches, function (t) {
-    return identifier === t.identifier;
-  }) || e.changedTouches && (0, _shims.findInArray)(e.changedTouches, function (t) {
-    return identifier === t.identifier;
-  });
-}
-
-function getTouchIdentifier(e
-/*: MouseTouchEvent*/
-)
-/*: ?number*/
-{
-  if (e.targetTouches && e.targetTouches[0]) return e.targetTouches[0].identifier;
-  if (e.changedTouches && e.changedTouches[0]) return e.changedTouches[0].identifier;
-} // User-select Hacks:
-//
-// Useful for preventing blue highlights all over everything when dragging.
-// Note we're passing `document` b/c we could be iframed
-
-
-function addUserSelectStyles(doc
-/*: ?Document*/
-) {
-  if (!doc) return;
-  var styleEl = doc.getElementById('react-draggable-style-el');
-
-  if (!styleEl) {
-    styleEl = doc.createElement('style');
-    styleEl.type = 'text/css';
-    styleEl.id = 'react-draggable-style-el';
-    styleEl.innerHTML = '.react-draggable-transparent-selection *::-moz-selection {all: inherit;}\n';
-    styleEl.innerHTML += '.react-draggable-transparent-selection *::selection {all: inherit;}\n';
-    doc.getElementsByTagName('head')[0].appendChild(styleEl);
-  }
-
-  if (doc.body) addClassName(doc.body, 'react-draggable-transparent-selection');
-}
-
-function removeUserSelectStyles(doc
-/*: ?Document*/
-) {
-  if (!doc) return;
-
-  try {
-    if (doc.body) removeClassName(doc.body, 'react-draggable-transparent-selection'); // $FlowIgnore: IE
-
-    if (doc.selection) {
-      // $FlowIgnore: IE
-      doc.selection.empty();
-    } else {
-      // Remove selection caused by scroll, unless it's a focused input
-      // (we use doc.defaultView in case we're in an iframe)
-      var selection = (doc.defaultView || window).getSelection();
-
-      if (selection && selection.type !== 'Caret') {
-        selection.removeAllRanges();
-      }
-    }
-  } catch (e) {// probably IE
-  }
-}
-
-function addClassName(el
-/*: HTMLElement*/
-, className
-/*: string*/
-) {
-  if (el.classList) {
-    el.classList.add(className);
-  } else {
-    if (!el.className.match(new RegExp("(?:^|\\s)".concat(className, "(?!\\S)")))) {
-      el.className += " ".concat(className);
-    }
-  }
-}
-
-function removeClassName(el
-/*: HTMLElement*/
-, className
-/*: string*/
-) {
-  if (el.classList) {
-    el.classList.remove(className);
-  } else {
-    el.className = el.className.replace(new RegExp("(?:^|\\s)".concat(className, "(?!\\S)"), 'g'), '');
-  }
-}
-},{"./shims":"node_modules/react-draggable/build/cjs/utils/shims.js","./getPrefix":"node_modules/react-draggable/build/cjs/utils/getPrefix.js"}],"node_modules/react-draggable/build/cjs/utils/positionFns.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.canDragX = canDragX;
-exports.canDragY = canDragY;
-exports.createCoreData = createCoreData;
-exports.createDraggableData = createDraggableData;
-exports.getBoundPosition = getBoundPosition;
-exports.getControlPosition = getControlPosition;
-exports.snapToGrid = snapToGrid;
-
-var _shims = require("./shims");
-
-var _domFns = require("./domFns");
-
-function getBoundPosition(draggable
-/*: Draggable*/
-, x
-/*: number*/
-, y
-/*: number*/
-)
-/*: [number, number]*/
-{
-  // If no bounds, short-circuit and move on
-  if (!draggable.props.bounds) return [x, y]; // Clone new bounds
-
-  var bounds = draggable.props.bounds;
-  bounds = typeof bounds === 'string' ? bounds : cloneBounds(bounds);
-  var node = findDOMNode(draggable);
-
-  if (typeof bounds === 'string') {
-    var ownerDocument = node.ownerDocument;
-    var ownerWindow = ownerDocument.defaultView;
-    var boundNode;
-
-    if (bounds === 'parent') {
-      boundNode = node.parentNode;
-    } else {
-      boundNode = ownerDocument.querySelector(bounds);
-    }
-
-    if (!(boundNode instanceof ownerWindow.HTMLElement)) {
-      throw new Error('Bounds selector "' + bounds + '" could not find an element.');
-    }
-
-    var boundNodeEl
-    /*: HTMLElement*/
-    = boundNode; // for Flow, can't seem to refine correctly
-
-    var nodeStyle = ownerWindow.getComputedStyle(node);
-    var boundNodeStyle = ownerWindow.getComputedStyle(boundNodeEl); // Compute bounds. This is a pain with padding and offsets but this gets it exactly right.
-
-    bounds = {
-      left: -node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingLeft) + (0, _shims.int)(nodeStyle.marginLeft),
-      top: -node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingTop) + (0, _shims.int)(nodeStyle.marginTop),
-      right: (0, _domFns.innerWidth)(boundNodeEl) - (0, _domFns.outerWidth)(node) - node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingRight) - (0, _shims.int)(nodeStyle.marginRight),
-      bottom: (0, _domFns.innerHeight)(boundNodeEl) - (0, _domFns.outerHeight)(node) - node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingBottom) - (0, _shims.int)(nodeStyle.marginBottom)
-    };
-  } // Keep x and y below right and bottom limits...
-
-
-  if ((0, _shims.isNum)(bounds.right)) x = Math.min(x, bounds.right);
-  if ((0, _shims.isNum)(bounds.bottom)) y = Math.min(y, bounds.bottom); // But above left and top limits.
-
-  if ((0, _shims.isNum)(bounds.left)) x = Math.max(x, bounds.left);
-  if ((0, _shims.isNum)(bounds.top)) y = Math.max(y, bounds.top);
-  return [x, y];
-}
-
-function snapToGrid(grid
-/*: [number, number]*/
-, pendingX
-/*: number*/
-, pendingY
-/*: number*/
-)
-/*: [number, number]*/
-{
-  var x = Math.round(pendingX / grid[0]) * grid[0];
-  var y = Math.round(pendingY / grid[1]) * grid[1];
-  return [x, y];
-}
-
-function canDragX(draggable
-/*: Draggable*/
-)
-/*: boolean*/
-{
-  return draggable.props.axis === 'both' || draggable.props.axis === 'x';
-}
-
-function canDragY(draggable
-/*: Draggable*/
-)
-/*: boolean*/
-{
-  return draggable.props.axis === 'both' || draggable.props.axis === 'y';
-} // Get {x, y} positions from event.
-
-
-function getControlPosition(e
-/*: MouseTouchEvent*/
-, touchIdentifier
-/*: ?number*/
-, draggableCore
-/*: DraggableCore*/
-)
-/*: ?ControlPosition*/
-{
-  var touchObj = typeof touchIdentifier === 'number' ? (0, _domFns.getTouch)(e, touchIdentifier) : null;
-  if (typeof touchIdentifier === 'number' && !touchObj) return null; // not the right touch
-
-  var node = findDOMNode(draggableCore); // User can provide an offsetParent if desired.
-
-  var offsetParent = draggableCore.props.offsetParent || node.offsetParent || node.ownerDocument.body;
-  return (0, _domFns.offsetXYFromParent)(touchObj || e, offsetParent, draggableCore.props.scale);
-} // Create an data object exposed by <DraggableCore>'s events
-
-
-function createCoreData(draggable
-/*: DraggableCore*/
-, x
-/*: number*/
-, y
-/*: number*/
-)
-/*: DraggableData*/
-{
-  var state = draggable.state;
-  var isStart = !(0, _shims.isNum)(state.lastX);
-  var node = findDOMNode(draggable);
-
-  if (isStart) {
-    // If this is our first move, use the x and y as last coords.
-    return {
-      node: node,
-      deltaX: 0,
-      deltaY: 0,
-      lastX: x,
-      lastY: y,
-      x: x,
-      y: y
-    };
-  } else {
-    // Otherwise calculate proper values.
-    return {
-      node: node,
-      deltaX: x - state.lastX,
-      deltaY: y - state.lastY,
-      lastX: state.lastX,
-      lastY: state.lastY,
-      x: x,
-      y: y
-    };
-  }
-} // Create an data exposed by <Draggable>'s events
-
-
-function createDraggableData(draggable
-/*: Draggable*/
-, coreData
-/*: DraggableData*/
-)
-/*: DraggableData*/
-{
-  var scale = draggable.props.scale;
-  return {
-    node: coreData.node,
-    x: draggable.state.x + coreData.deltaX / scale,
-    y: draggable.state.y + coreData.deltaY / scale,
-    deltaX: coreData.deltaX / scale,
-    deltaY: coreData.deltaY / scale,
-    lastX: draggable.state.x,
-    lastY: draggable.state.y
-  };
-} // A lot faster than stringify/parse
-
-
-function cloneBounds(bounds
-/*: Bounds*/
-)
-/*: Bounds*/
-{
-  return {
-    left: bounds.left,
-    top: bounds.top,
-    right: bounds.right,
-    bottom: bounds.bottom
-  };
-}
-
-function findDOMNode(draggable
-/*: Draggable | DraggableCore*/
-)
-/*: HTMLElement*/
-{
-  var node = draggable.findDOMNode();
-
-  if (!node) {
-    throw new Error('<DraggableCore>: Unmounted during event!');
-  } // $FlowIgnore we can't assert on HTMLElement due to tests... FIXME
-
-
-  return node;
-}
-},{"./shims":"node_modules/react-draggable/build/cjs/utils/shims.js","./domFns":"node_modules/react-draggable/build/cjs/utils/domFns.js"}],"node_modules/react-draggable/build/cjs/utils/log.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = log;
-
-/*eslint no-console:0*/
-function log() {
-  var _console;
-
-  if (undefined) (_console = console).log.apply(_console, arguments);
-}
-},{}],"node_modules/react-draggable/build/cjs/DraggableCore.js":[function(require,module,exports) {
-"use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var React = _interopRequireWildcard(require("react"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
-var _domFns = require("./utils/domFns");
-
-var _positionFns = require("./utils/positionFns");
-
-var _shims = require("./utils/shims");
-
-var _log = _interopRequireDefault(require("./utils/log"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-// Simple abstraction for dragging events names.
-var eventsFor = {
-  touch: {
-    start: 'touchstart',
-    move: 'touchmove',
-    stop: 'touchend'
-  },
-  mouse: {
-    start: 'mousedown',
-    move: 'mousemove',
-    stop: 'mouseup'
-  }
-}; // Default to mouse events.
-
-var dragEventFor = eventsFor.mouse;
-/*:: type DraggableCoreState = {
-  dragging: boolean,
-  lastX: number,
-  lastY: number,
-  touchIdentifier: ?number
-};*/
-
-/*:: export type DraggableData = {
-  node: HTMLElement,
-  x: number, y: number,
-  deltaX: number, deltaY: number,
-  lastX: number, lastY: number,
-};*/
-
-/*:: export type DraggableEventHandler = (e: MouseEvent, data: DraggableData) => void | false;*/
-
-/*:: export type ControlPosition = {x: number, y: number};*/
-
-/*:: export type PositionOffsetControlPosition = {x: number|string, y: number|string};*/
-
-/*:: export type DraggableCoreDefaultProps = {
-  allowAnyClick: boolean,
-  disabled: boolean,
-  enableUserSelectHack: boolean,
-  onStart: DraggableEventHandler,
-  onDrag: DraggableEventHandler,
-  onStop: DraggableEventHandler,
-  onMouseDown: (e: MouseEvent) => void,
-  scale: number,
-};*/
-
-/*:: export type DraggableCoreProps = {
-  ...DraggableCoreDefaultProps,
-  cancel: string,
-  children: ReactElement<any>,
-  offsetParent: HTMLElement,
-  grid: [number, number],
-  handle: string,
-  nodeRef?: ?React.ElementRef<any>,
-};*/
-
-//
-// Define <DraggableCore>.
-//
-// <DraggableCore> is for advanced usage of <Draggable>. It maintains minimal internal state so it can
-// work well with libraries that require more control over the element.
-//
-var DraggableCore = /*#__PURE__*/function (_React$Component) {
-  _inherits(DraggableCore, _React$Component);
-
-  var _super = _createSuper(DraggableCore);
-
-  function DraggableCore() {
-    var _this;
-
-    _classCallCheck(this, DraggableCore);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "state", {
-      dragging: false,
-      // Used while dragging to determine deltas.
-      lastX: NaN,
-      lastY: NaN,
-      touchIdentifier: null
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "handleDragStart", function (e) {
-      // Make it possible to attach event handlers on top of this one.
-      _this.props.onMouseDown(e); // Only accept left-clicks.
-
-
-      if (!_this.props.allowAnyClick && typeof e.button === 'number' && e.button !== 0) return false; // Get nodes. Be sure to grab relative document (could be iframed)
-
-      var thisNode = _this.findDOMNode();
-
-      if (!thisNode || !thisNode.ownerDocument || !thisNode.ownerDocument.body) {
-        throw new Error('<DraggableCore> not mounted on DragStart!');
-      }
-
-      var ownerDocument = thisNode.ownerDocument; // Short circuit if handle or cancel prop was provided and selector doesn't match.
-
-      if (_this.props.disabled || !(e.target instanceof ownerDocument.defaultView.Node) || _this.props.handle && !(0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.handle, thisNode) || _this.props.cancel && (0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.cancel, thisNode)) {
-        return;
-      } // Prevent scrolling on mobile devices, like ipad/iphone.
-      // Important that this is after handle/cancel.
-
-
-      if (e.type === 'touchstart') e.preventDefault(); // Set touch identifier in component state if this is a touch event. This allows us to
-      // distinguish between individual touches on multitouch screens by identifying which
-      // touchpoint was set to this element.
-
-      var touchIdentifier = (0, _domFns.getTouchIdentifier)(e);
-
-      _this.setState({
-        touchIdentifier: touchIdentifier
-      }); // Get the current drag point from the event. This is used as the offset.
-
-
-      var position = (0, _positionFns.getControlPosition)(e, touchIdentifier, _assertThisInitialized(_this));
-      if (position == null) return; // not possible but satisfies flow
-
-      var x = position.x,
-          y = position.y; // Create an event object with all the data parents need to make a decision here.
-
-      var coreEvent = (0, _positionFns.createCoreData)(_assertThisInitialized(_this), x, y);
-      (0, _log.default)('DraggableCore: handleDragStart: %j', coreEvent); // Call event handler. If it returns explicit false, cancel.
-
-      (0, _log.default)('calling', _this.props.onStart);
-
-      var shouldUpdate = _this.props.onStart(e, coreEvent);
-
-      if (shouldUpdate === false || _this.mounted === false) return; // Add a style to the body to disable user-select. This prevents text from
-      // being selected all over the page.
-
-      if (_this.props.enableUserSelectHack) (0, _domFns.addUserSelectStyles)(ownerDocument); // Initiate dragging. Set the current x and y as offsets
-      // so we know how much we've moved during the drag. This allows us
-      // to drag elements around even if they have been moved, without issue.
-
-      _this.setState({
-        dragging: true,
-        lastX: x,
-        lastY: y
-      }); // Add events to the document directly so we catch when the user's mouse/touch moves outside of
-      // this element. We use different events depending on whether or not we have detected that this
-      // is a touch-capable device.
-
-
-      (0, _domFns.addEvent)(ownerDocument, dragEventFor.move, _this.handleDrag);
-      (0, _domFns.addEvent)(ownerDocument, dragEventFor.stop, _this.handleDragStop);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleDrag", function (e) {
-      // Get the current drag point from the event. This is used as the offset.
-      var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _assertThisInitialized(_this));
-      if (position == null) return;
-      var x = position.x,
-          y = position.y; // Snap to grid if prop has been provided
-
-      if (Array.isArray(_this.props.grid)) {
-        var deltaX = x - _this.state.lastX,
-            deltaY = y - _this.state.lastY;
-
-        var _snapToGrid = (0, _positionFns.snapToGrid)(_this.props.grid, deltaX, deltaY);
-
-        var _snapToGrid2 = _slicedToArray(_snapToGrid, 2);
-
-        deltaX = _snapToGrid2[0];
-        deltaY = _snapToGrid2[1];
-        if (!deltaX && !deltaY) return; // skip useless drag
-
-        x = _this.state.lastX + deltaX, y = _this.state.lastY + deltaY;
-      }
-
-      var coreEvent = (0, _positionFns.createCoreData)(_assertThisInitialized(_this), x, y);
-      (0, _log.default)('DraggableCore: handleDrag: %j', coreEvent); // Call event handler. If it returns explicit false, trigger end.
-
-      var shouldUpdate = _this.props.onDrag(e, coreEvent);
-
-      if (shouldUpdate === false || _this.mounted === false) {
-        try {
-          // $FlowIgnore
-          _this.handleDragStop(new MouseEvent('mouseup'));
-        } catch (err) {
-          // Old browsers
-          var event = ((document.createEvent('MouseEvents')
-          /*: any*/
-          )
-          /*: MouseTouchEvent*/
-          ); // I see why this insanity was deprecated
-          // $FlowIgnore
-
-          event.initMouseEvent('mouseup', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-
-          _this.handleDragStop(event);
-        }
-
-        return;
-      }
-
-      _this.setState({
-        lastX: x,
-        lastY: y
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleDragStop", function (e) {
-      if (!_this.state.dragging) return;
-      var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _assertThisInitialized(_this));
-      if (position == null) return;
-      var x = position.x,
-          y = position.y; // Snap to grid if prop has been provided
-
-      if (Array.isArray(_this.props.grid)) {
-        var deltaX = x - _this.state.lastX || 0;
-        var deltaY = y - _this.state.lastY || 0;
-
-        var _snapToGrid3 = (0, _positionFns.snapToGrid)(_this.props.grid, deltaX, deltaY);
-
-        var _snapToGrid4 = _slicedToArray(_snapToGrid3, 2);
-
-        deltaX = _snapToGrid4[0];
-        deltaY = _snapToGrid4[1];
-        x = _this.state.lastX + deltaX, y = _this.state.lastY + deltaY;
-      }
-
-      var coreEvent = (0, _positionFns.createCoreData)(_assertThisInitialized(_this), x, y); // Call event handler
-
-      var shouldContinue = _this.props.onStop(e, coreEvent);
-
-      if (shouldContinue === false || _this.mounted === false) return false;
-
-      var thisNode = _this.findDOMNode();
-
-      if (thisNode) {
-        // Remove user-select hack
-        if (_this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(thisNode.ownerDocument);
-      }
-
-      (0, _log.default)('DraggableCore: handleDragStop: %j', coreEvent); // Reset the el.
-
-      _this.setState({
-        dragging: false,
-        lastX: NaN,
-        lastY: NaN
-      });
-
-      if (thisNode) {
-        // Remove event handlers
-        (0, _log.default)('DraggableCore: Removing handlers');
-        (0, _domFns.removeEvent)(thisNode.ownerDocument, dragEventFor.move, _this.handleDrag);
-        (0, _domFns.removeEvent)(thisNode.ownerDocument, dragEventFor.stop, _this.handleDragStop);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onMouseDown", function (e) {
-      dragEventFor = eventsFor.mouse; // on touchscreen laptops we could switch back to mouse
-
-      return _this.handleDragStart(e);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onMouseUp", function (e) {
-      dragEventFor = eventsFor.mouse;
-      return _this.handleDragStop(e);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onTouchStart", function (e) {
-      // We're on a touch device now, so change the event handlers
-      dragEventFor = eventsFor.touch;
-      return _this.handleDragStart(e);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onTouchEnd", function (e) {
-      // We're on a touch device now, so change the event handlers
-      dragEventFor = eventsFor.touch;
-      return _this.handleDragStop(e);
-    });
-
-    return _this;
-  }
-
-  _createClass(DraggableCore, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true; // Touch handlers must be added with {passive: false} to be cancelable.
-      // https://developers.google.com/web/updates/2017/01/scrolling-intervention
-
-      var thisNode = this.findDOMNode();
-
-      if (thisNode) {
-        (0, _domFns.addEvent)(thisNode, eventsFor.touch.start, this.onTouchStart, {
-          passive: false
-        });
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.mounted = false; // Remove any leftover event handlers. Remove both touch and mouse handlers in case
-      // some browser quirk caused a touch event to fire during a mouse move, or vice versa.
-
-      var thisNode = this.findDOMNode();
-
-      if (thisNode) {
-        var ownerDocument = thisNode.ownerDocument;
-        (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.move, this.handleDrag);
-        (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.move, this.handleDrag);
-        (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.stop, this.handleDragStop);
-        (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.stop, this.handleDragStop);
-        (0, _domFns.removeEvent)(thisNode, eventsFor.touch.start, this.onTouchStart, {
-          passive: false
-        });
-        if (this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(ownerDocument);
-      }
-    } // React Strict Mode compatibility: if `nodeRef` is passed, we will use it instead of trying to find
-    // the underlying DOM node ourselves. See the README for more information.
-
-  }, {
-    key: "findDOMNode",
-    value: function findDOMNode()
-    /*: ?HTMLElement*/
-    {
-      var _this$props, _this$props2, _this$props2$nodeRef;
-
-      return (_this$props = this.props) !== null && _this$props !== void 0 && _this$props.nodeRef ? (_this$props2 = this.props) === null || _this$props2 === void 0 ? void 0 : (_this$props2$nodeRef = _this$props2.nodeRef) === null || _this$props2$nodeRef === void 0 ? void 0 : _this$props2$nodeRef.current : _reactDom.default.findDOMNode(this);
-    }
-  }, {
-    key: "render",
-    value: function render()
-    /*: React.Element<any>*/
-    {
-      // Reuse the child provided
-      // This makes it flexible to use whatever element is wanted (div, ul, etc)
-      return /*#__PURE__*/React.cloneElement(React.Children.only(this.props.children), {
-        // Note: mouseMove handler is attached to document so it will still function
-        // when the user drags quickly and leaves the bounds of the element.
-        onMouseDown: this.onMouseDown,
-        onMouseUp: this.onMouseUp,
-        // onTouchStart is added on `componentDidMount` so they can be added with
-        // {passive: false}, which allows it to cancel. See
-        // https://developers.google.com/web/updates/2017/01/scrolling-intervention
-        onTouchEnd: this.onTouchEnd
-      });
-    }
-  }]);
-
-  return DraggableCore;
-}(React.Component);
-
-exports.default = DraggableCore;
-
-_defineProperty(DraggableCore, "displayName", 'DraggableCore');
-
-_defineProperty(DraggableCore, "propTypes", {
-  /**
-   * `allowAnyClick` allows dragging using any mouse button.
-   * By default, we only accept the left button.
-   *
-   * Defaults to `false`.
-   */
-  allowAnyClick: _propTypes.default.bool,
-
-  /**
-   * `disabled`, if true, stops the <Draggable> from dragging. All handlers,
-   * with the exception of `onMouseDown`, will not fire.
-   */
-  disabled: _propTypes.default.bool,
-
-  /**
-   * By default, we add 'user-select:none' attributes to the document body
-   * to prevent ugly text selection during drag. If this is causing problems
-   * for your app, set this to `false`.
-   */
-  enableUserSelectHack: _propTypes.default.bool,
-
-  /**
-   * `offsetParent`, if set, uses the passed DOM node to compute drag offsets
-   * instead of using the parent node.
-   */
-  offsetParent: function offsetParent(props
-  /*: DraggableCoreProps*/
-  , propName
-  /*: $Keys<DraggableCoreProps>*/
-  ) {
-    if (props[propName] && props[propName].nodeType !== 1) {
-      throw new Error('Draggable\'s offsetParent must be a DOM Node.');
-    }
-  },
-
-  /**
-   * `grid` specifies the x and y that dragging should snap to.
-   */
-  grid: _propTypes.default.arrayOf(_propTypes.default.number),
-
-  /**
-   * `handle` specifies a selector to be used as the handle that initiates drag.
-   *
-   * Example:
-   *
-   * ```jsx
-   *   let App = React.createClass({
-   *       render: function () {
-   *         return (
-   *            <Draggable handle=".handle">
-   *              <div>
-   *                  <div className="handle">Click me to drag</div>
-   *                  <div>This is some other content</div>
-   *              </div>
-   *           </Draggable>
-   *         );
-   *       }
-   *   });
-   * ```
-   */
-  handle: _propTypes.default.string,
-
-  /**
-   * `cancel` specifies a selector to be used to prevent drag initialization.
-   *
-   * Example:
-   *
-   * ```jsx
-   *   let App = React.createClass({
-   *       render: function () {
-   *           return(
-   *               <Draggable cancel=".cancel">
-   *                   <div>
-   *                     <div className="cancel">You can't drag from here</div>
-   *                     <div>Dragging here works fine</div>
-   *                   </div>
-   *               </Draggable>
-   *           );
-   *       }
-   *   });
-   * ```
-   */
-  cancel: _propTypes.default.string,
-
-  /* If running in React Strict mode, ReactDOM.findDOMNode() is deprecated.
-   * Unfortunately, in order for <Draggable> to work properly, we need raw access
-   * to the underlying DOM node. If you want to avoid the warning, pass a `nodeRef`
-   * as in this example:
-   *
-   * function MyComponent() {
-   *   const nodeRef = React.useRef(null);
-   *   return (
-   *     <Draggable nodeRef={nodeRef}>
-   *       <div ref={nodeRef}>Example Target</div>
-   *     </Draggable>
-   *   );
-   * }
-   *
-   * This can be used for arbitrarily nested components, so long as the ref ends up
-   * pointing to the actual child DOM node and not a custom component.
-   */
-  nodeRef: _propTypes.default.object,
-
-  /**
-   * Called when dragging starts.
-   * If this function returns the boolean false, dragging will be canceled.
-   */
-  onStart: _propTypes.default.func,
-
-  /**
-   * Called while dragging.
-   * If this function returns the boolean false, dragging will be canceled.
-   */
-  onDrag: _propTypes.default.func,
-
-  /**
-   * Called when dragging stops.
-   * If this function returns the boolean false, the drag will remain active.
-   */
-  onStop: _propTypes.default.func,
-
-  /**
-   * A workaround option which can be passed if onMouseDown needs to be accessed,
-   * since it'll always be blocked (as there is internal use of onMouseDown)
-   */
-  onMouseDown: _propTypes.default.func,
-
-  /**
-   * `scale`, if set, applies scaling while dragging an element
-   */
-  scale: _propTypes.default.number,
-
-  /**
-   * These properties should be defined on the child, not here.
-   */
-  className: _shims.dontSetMe,
-  style: _shims.dontSetMe,
-  transform: _shims.dontSetMe
-});
-
-_defineProperty(DraggableCore, "defaultProps", {
-  allowAnyClick: false,
-  // by default only accept left click
-  disabled: false,
-  enableUserSelectHack: true,
-  onStart: function onStart() {},
-  onDrag: function onDrag() {},
-  onStop: function onStop() {},
-  onMouseDown: function onMouseDown() {},
-  scale: 1
-});
-},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js","react-dom":"node_modules/react-dom/index.js","./utils/domFns":"node_modules/react-draggable/build/cjs/utils/domFns.js","./utils/positionFns":"node_modules/react-draggable/build/cjs/utils/positionFns.js","./utils/shims":"node_modules/react-draggable/build/cjs/utils/shims.js","./utils/log":"node_modules/react-draggable/build/cjs/utils/log.js"}],"node_modules/react-draggable/build/cjs/Draggable.js":[function(require,module,exports) {
-"use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "DraggableCore", {
-  enumerable: true,
-  get: function get() {
-    return _DraggableCore.default;
-  }
-});
-exports.default = void 0;
-
-var React = _interopRequireWildcard(require("react"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
-var _clsx2 = _interopRequireDefault(require("clsx"));
-
-var _domFns = require("./utils/domFns");
-
-var _positionFns = require("./utils/positionFns");
-
-var _shims = require("./utils/shims");
-
-var _DraggableCore = _interopRequireDefault(require("./DraggableCore"));
-
-var _log = _interopRequireDefault(require("./utils/log"));
-
-var _excluded = ["axis", "bounds", "children", "defaultPosition", "defaultClassName", "defaultClassNameDragging", "defaultClassNameDragged", "position", "positionOffset", "scale"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-// Define <Draggable>
-//
-var Draggable = /*#__PURE__*/function (_React$Component) {
-  _inherits(Draggable, _React$Component);
-
-  var _super = _createSuper(Draggable);
-
-  function Draggable(props
-  /*: DraggableProps*/
-  ) {
-    var _this;
-
-    _classCallCheck(this, Draggable);
-
-    _this = _super.call(this, props);
-
-    _defineProperty(_assertThisInitialized(_this), "onDragStart", function (e, coreData) {
-      (0, _log.default)('Draggable: onDragStart: %j', coreData); // Short-circuit if user's callback killed it.
-
-      var shouldStart = _this.props.onStart(e, (0, _positionFns.createDraggableData)(_assertThisInitialized(_this), coreData)); // Kills start event on core as well, so move handlers are never bound.
-
-
-      if (shouldStart === false) return false;
-
-      _this.setState({
-        dragging: true,
-        dragged: true
-      });
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onDrag", function (e, coreData) {
-      if (!_this.state.dragging) return false;
-      (0, _log.default)('Draggable: onDrag: %j', coreData);
-      var uiData = (0, _positionFns.createDraggableData)(_assertThisInitialized(_this), coreData);
-      var newState
-      /*: $Shape<DraggableState>*/
-      = {
-        x: uiData.x,
-        y: uiData.y
-      }; // Keep within bounds.
-
-      if (_this.props.bounds) {
-        // Save original x and y.
-        var x = newState.x,
-            y = newState.y; // Add slack to the values used to calculate bound position. This will ensure that if
-        // we start removing slack, the element won't react to it right away until it's been
-        // completely removed.
-
-        newState.x += _this.state.slackX;
-        newState.y += _this.state.slackY; // Get bound position. This will ceil/floor the x and y within the boundaries.
-
-        var _getBoundPosition = (0, _positionFns.getBoundPosition)(_assertThisInitialized(_this), newState.x, newState.y),
-            _getBoundPosition2 = _slicedToArray(_getBoundPosition, 2),
-            newStateX = _getBoundPosition2[0],
-            newStateY = _getBoundPosition2[1];
-
-        newState.x = newStateX;
-        newState.y = newStateY; // Recalculate slack by noting how much was shaved by the boundPosition handler.
-
-        newState.slackX = _this.state.slackX + (x - newState.x);
-        newState.slackY = _this.state.slackY + (y - newState.y); // Update the event we fire to reflect what really happened after bounds took effect.
-
-        uiData.x = newState.x;
-        uiData.y = newState.y;
-        uiData.deltaX = newState.x - _this.state.x;
-        uiData.deltaY = newState.y - _this.state.y;
-      } // Short-circuit if user's callback killed it.
-
-
-      var shouldUpdate = _this.props.onDrag(e, uiData);
-
-      if (shouldUpdate === false) return false;
-
-      _this.setState(newState);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onDragStop", function (e, coreData) {
-      if (!_this.state.dragging) return false; // Short-circuit if user's callback killed it.
-
-      var shouldContinue = _this.props.onStop(e, (0, _positionFns.createDraggableData)(_assertThisInitialized(_this), coreData));
-
-      if (shouldContinue === false) return false;
-      (0, _log.default)('Draggable: onDragStop: %j', coreData);
-      var newState
-      /*: $Shape<DraggableState>*/
-      = {
-        dragging: false,
-        slackX: 0,
-        slackY: 0
-      }; // If this is a controlled component, the result of this operation will be to
-      // revert back to the old position. We expect a handler on `onDragStop`, at the least.
-
-      var controlled = Boolean(_this.props.position);
-
-      if (controlled) {
-        var _this$props$position = _this.props.position,
-            x = _this$props$position.x,
-            y = _this$props$position.y;
-        newState.x = x;
-        newState.y = y;
-      }
-
-      _this.setState(newState);
-    });
-
-    _this.state = {
-      // Whether or not we are currently dragging.
-      dragging: false,
-      // Whether or not we have been dragged before.
-      dragged: false,
-      // Current transform x and y.
-      x: props.position ? props.position.x : props.defaultPosition.x,
-      y: props.position ? props.position.y : props.defaultPosition.y,
-      prevPropsPosition: _objectSpread({}, props.position),
-      // Used for compensating for out-of-bounds drags
-      slackX: 0,
-      slackY: 0,
-      // Can only determine if SVG after mounting
-      isElementSVG: false
-    };
-
-    if (props.position && !(props.onDrag || props.onStop)) {
-      // eslint-disable-next-line no-console
-      console.warn('A `position` was applied to this <Draggable>, without drag handlers. This will make this ' + 'component effectively undraggable. Please attach `onDrag` or `onStop` handlers so you can adjust the ' + '`position` of this element.');
-    }
-
-    return _this;
-  }
-
-  _createClass(Draggable, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      // Check to see if the element passed is an instanceof SVGElement
-      if (typeof window.SVGElement !== 'undefined' && this.findDOMNode() instanceof window.SVGElement) {
-        this.setState({
-          isElementSVG: true
-        });
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.setState({
-        dragging: false
-      }); // prevents invariant if unmounted while dragging
-    } // React Strict Mode compatibility: if `nodeRef` is passed, we will use it instead of trying to find
-    // the underlying DOM node ourselves. See the README for more information.
-
-  }, {
-    key: "findDOMNode",
-    value: function findDOMNode()
-    /*: ?HTMLElement*/
-    {
-      var _this$props$nodeRef$c, _this$props, _this$props$nodeRef;
-
-      return (_this$props$nodeRef$c = (_this$props = this.props) === null || _this$props === void 0 ? void 0 : (_this$props$nodeRef = _this$props.nodeRef) === null || _this$props$nodeRef === void 0 ? void 0 : _this$props$nodeRef.current) !== null && _this$props$nodeRef$c !== void 0 ? _this$props$nodeRef$c : _reactDom.default.findDOMNode(this);
-    }
-  }, {
-    key: "render",
-    value: function render()
-    /*: ReactElement<any>*/
-    {
-      var _clsx;
-
-      var _this$props2 = this.props,
-          axis = _this$props2.axis,
-          bounds = _this$props2.bounds,
-          children = _this$props2.children,
-          defaultPosition = _this$props2.defaultPosition,
-          defaultClassName = _this$props2.defaultClassName,
-          defaultClassNameDragging = _this$props2.defaultClassNameDragging,
-          defaultClassNameDragged = _this$props2.defaultClassNameDragged,
-          position = _this$props2.position,
-          positionOffset = _this$props2.positionOffset,
-          scale = _this$props2.scale,
-          draggableCoreProps = _objectWithoutProperties(_this$props2, _excluded);
-
-      var style = {};
-      var svgTransform = null; // If this is controlled, we don't want to move it - unless it's dragging.
-
-      var controlled = Boolean(position);
-      var draggable = !controlled || this.state.dragging;
-      var validPosition = position || defaultPosition;
-      var transformOpts = {
-        // Set left if horizontal drag is enabled
-        x: (0, _positionFns.canDragX)(this) && draggable ? this.state.x : validPosition.x,
-        // Set top if vertical drag is enabled
-        y: (0, _positionFns.canDragY)(this) && draggable ? this.state.y : validPosition.y
-      }; // If this element was SVG, we use the `transform` attribute.
-
-      if (this.state.isElementSVG) {
-        svgTransform = (0, _domFns.createSVGTransform)(transformOpts, positionOffset);
-      } else {
-        // Add a CSS transform to move the element around. This allows us to move the element around
-        // without worrying about whether or not it is relatively or absolutely positioned.
-        // If the item you are dragging already has a transform set, wrap it in a <span> so <Draggable>
-        // has a clean slate.
-        style = (0, _domFns.createCSSTransform)(transformOpts, positionOffset);
-      } // Mark with class while dragging
-
-
-      var className = (0, _clsx2.default)(children.props.className || '', defaultClassName, (_clsx = {}, _defineProperty(_clsx, defaultClassNameDragging, this.state.dragging), _defineProperty(_clsx, defaultClassNameDragged, this.state.dragged), _clsx)); // Reuse the child provided
-      // This makes it flexible to use whatever element is wanted (div, ul, etc)
-
-      return /*#__PURE__*/React.createElement(_DraggableCore.default, _extends({}, draggableCoreProps, {
-        onStart: this.onDragStart,
-        onDrag: this.onDrag,
-        onStop: this.onDragStop
-      }), /*#__PURE__*/React.cloneElement(React.Children.only(children), {
-        className: className,
-        style: _objectSpread(_objectSpread({}, children.props.style), style),
-        transform: svgTransform
-      }));
-    }
-  }], [{
-    key: "getDerivedStateFromProps",
-    value: // React 16.3+
-    // Arity (props, state)
-    function getDerivedStateFromProps(_ref, _ref2)
-    /*: ?$Shape<DraggableState>*/
-    {
-      var position = _ref.position;
-      var prevPropsPosition = _ref2.prevPropsPosition;
-
-      // Set x/y if a new position is provided in props that is different than the previous.
-      if (position && (!prevPropsPosition || position.x !== prevPropsPosition.x || position.y !== prevPropsPosition.y)) {
-        (0, _log.default)('Draggable: getDerivedStateFromProps %j', {
-          position: position,
-          prevPropsPosition: prevPropsPosition
-        });
-        return {
-          x: position.x,
-          y: position.y,
-          prevPropsPosition: _objectSpread({}, position)
-        };
-      }
-
-      return null;
-    }
-  }]);
-
-  return Draggable;
-}(React.Component);
-
-exports.default = Draggable;
-
-_defineProperty(Draggable, "displayName", 'Draggable');
-
-_defineProperty(Draggable, "propTypes", _objectSpread(_objectSpread({}, _DraggableCore.default.propTypes), {}, {
-  /**
-   * `axis` determines which axis the draggable can move.
-   *
-   *  Note that all callbacks will still return data as normal. This only
-   *  controls flushing to the DOM.
-   *
-   * 'both' allows movement horizontally and vertically.
-   * 'x' limits movement to horizontal axis.
-   * 'y' limits movement to vertical axis.
-   * 'none' limits all movement.
-   *
-   * Defaults to 'both'.
-   */
-  axis: _propTypes.default.oneOf(['both', 'x', 'y', 'none']),
-
-  /**
-   * `bounds` determines the range of movement available to the element.
-   * Available values are:
-   *
-   * 'parent' restricts movement within the Draggable's parent node.
-   *
-   * Alternatively, pass an object with the following properties, all of which are optional:
-   *
-   * {left: LEFT_BOUND, right: RIGHT_BOUND, bottom: BOTTOM_BOUND, top: TOP_BOUND}
-   *
-   * All values are in px.
-   *
-   * Example:
-   *
-   * ```jsx
-   *   let App = React.createClass({
-   *       render: function () {
-   *         return (
-   *            <Draggable bounds={{right: 300, bottom: 300}}>
-   *              <div>Content</div>
-   *           </Draggable>
-   *         );
-   *       }
-   *   });
-   * ```
-   */
-  bounds: _propTypes.default.oneOfType([_propTypes.default.shape({
-    left: _propTypes.default.number,
-    right: _propTypes.default.number,
-    top: _propTypes.default.number,
-    bottom: _propTypes.default.number
-  }), _propTypes.default.string, _propTypes.default.oneOf([false])]),
-  defaultClassName: _propTypes.default.string,
-  defaultClassNameDragging: _propTypes.default.string,
-  defaultClassNameDragged: _propTypes.default.string,
-
-  /**
-   * `defaultPosition` specifies the x and y that the dragged item should start at
-   *
-   * Example:
-   *
-   * ```jsx
-   *      let App = React.createClass({
-   *          render: function () {
-   *              return (
-   *                  <Draggable defaultPosition={{x: 25, y: 25}}>
-   *                      <div>I start with transformX: 25px and transformY: 25px;</div>
-   *                  </Draggable>
-   *              );
-   *          }
-   *      });
-   * ```
-   */
-  defaultPosition: _propTypes.default.shape({
-    x: _propTypes.default.number,
-    y: _propTypes.default.number
-  }),
-  positionOffset: _propTypes.default.shape({
-    x: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
-    y: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string])
-  }),
-
-  /**
-   * `position`, if present, defines the current position of the element.
-   *
-   *  This is similar to how form elements in React work - if no `position` is supplied, the component
-   *  is uncontrolled.
-   *
-   * Example:
-   *
-   * ```jsx
-   *      let App = React.createClass({
-   *          render: function () {
-   *              return (
-   *                  <Draggable position={{x: 25, y: 25}}>
-   *                      <div>I start with transformX: 25px and transformY: 25px;</div>
-   *                  </Draggable>
-   *              );
-   *          }
-   *      });
-   * ```
-   */
-  position: _propTypes.default.shape({
-    x: _propTypes.default.number,
-    y: _propTypes.default.number
-  }),
-
-  /**
-   * These properties should be defined on the child, not here.
-   */
-  className: _shims.dontSetMe,
-  style: _shims.dontSetMe,
-  transform: _shims.dontSetMe
-}));
-
-_defineProperty(Draggable, "defaultProps", _objectSpread(_objectSpread({}, _DraggableCore.default.defaultProps), {}, {
-  axis: 'both',
-  bounds: false,
-  defaultClassName: 'react-draggable',
-  defaultClassNameDragging: 'react-draggable-dragging',
-  defaultClassNameDragged: 'react-draggable-dragged',
-  defaultPosition: {
-    x: 0,
-    y: 0
-  },
-  scale: 1
-}));
-},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js","react-dom":"node_modules/react-dom/index.js","clsx":"node_modules/clsx/dist/clsx.m.js","./utils/domFns":"node_modules/react-draggable/build/cjs/utils/domFns.js","./utils/positionFns":"node_modules/react-draggable/build/cjs/utils/positionFns.js","./utils/shims":"node_modules/react-draggable/build/cjs/utils/shims.js","./DraggableCore":"node_modules/react-draggable/build/cjs/DraggableCore.js","./utils/log":"node_modules/react-draggable/build/cjs/utils/log.js"}],"node_modules/react-draggable/build/cjs/cjs.js":[function(require,module,exports) {
-"use strict";
-
-var _require = require('./Draggable'),
-    Draggable = _require.default,
-    DraggableCore = _require.DraggableCore; // Previous versions of this lib exported <Draggable> as the root export. As to no-// them, or TypeScript, we export *both* as the root and as 'default'.
-// See https://github.com/mzabriskie/react-draggable/pull/254
-// and https://github.com/mzabriskie/react-draggable/issues/266
-
-
-module.exports = Draggable;
-module.exports.default = Draggable;
-module.exports.DraggableCore = DraggableCore;
-},{"./Draggable":"node_modules/react-draggable/build/cjs/Draggable.js"}],"src/Level4/index.js":[function(require,module,exports) {
+var o=Object.getOwnPropertySymbols,i=Object.prototype.hasOwnProperty,a=Object.prototype.propertyIsEnumerable;e.exports=function(){try{if(!Object.assign)return!1;var e=new String("abc");if(e[5]="de","5"===Object.getOwnPropertyNames(e)[0])return!1;for(var t={},n=0;n<10;n++)t["_"+String.fromCharCode(n)]=n;if("0123456789"!==Object.getOwnPropertyNames(t).map(function(e){return t[e]}).join(""))return!1;var r={};return"abcdefghijklmnopqrst".split("").forEach(function(e){r[e]=e}),"abcdefghijklmnopqrst"===Object.keys(Object.assign({},r)).join("")}catch(e){return!1}}()?Object.assign:function(e,t){for(var n,u,s=r(e),l=1;l<arguments.length;l++){n=Object(arguments[l]);for(var c in n)i.call(n,c)&&(s[c]=n[c]);if(o){u=o(n);for(var p=0;p<u.length;p++)a.call(n,u[p])&&(s[u[p]]=n[u[p]])}}return s}},function(e,t,n){"use strict";function r(e){for(var t=arguments.length-1,n="Minified React error #"+e+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant="+e,r=0;r<t;r++)n+="&args[]="+encodeURIComponent(arguments[r+1]);n+=" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";var o=new Error(n);throw o.name="Invariant Violation",o.framesToPop=1,o}e.exports=r},function(e,t,n){"use strict";var r=n(5),o=r;e.exports=o},function(e,t,n){"use strict";function r(e){return function(){return e}}var o=function(){};o.thatReturns=r,o.thatReturnsFalse=r(!1),o.thatReturnsTrue=r(!0),o.thatReturnsNull=r(null),o.thatReturnsThis=function(){return this},o.thatReturnsArgument=function(e){return e},e.exports=o},function(e,t,n){"use strict";var r={};e.exports=r},function(e,t,n){e.exports=n(21)()},function(e,t,n){"use strict";e.exports="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"},function(e,t,n){"use strict";function r(e,t,n){this.props=e,this.context=t,this.refs=l,this.updater=n||s}function o(e,t,n){this.props=e,this.context=t,this.refs=l,this.updater=n||s}function i(){}var a=n(3),u=n(2),s=n(12),l=(n(13),n(6));n(1),n(32);r.prototype.isReactComponent={},r.prototype.setState=function(e,t){"object"!=typeof e&&"function"!=typeof e&&null!=e&&a("85"),this.updater.enqueueSetState(this,e),t&&this.updater.enqueueCallback(this,t,"setState")},r.prototype.forceUpdate=function(e){this.updater.enqueueForceUpdate(this),e&&this.updater.enqueueCallback(this,e,"forceUpdate")};i.prototype=r.prototype,o.prototype=new i,o.prototype.constructor=o,u(o.prototype,r.prototype),o.prototype.isPureReactComponent=!0,e.exports={Component:r,PureComponent:o}},function(e,t,n){"use strict";var r={current:null};e.exports=r},function(e,t,n){"use strict";var r="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103;e.exports=r},function(e,t,n){"use strict";var r=(n(4),{isMounted:function(e){return!1},enqueueCallback:function(e,t){},enqueueForceUpdate:function(e){},enqueueReplaceState:function(e,t){},enqueueSetState:function(e,t){}});e.exports=r},function(e,t,n){"use strict";var r=!1;e.exports=r},function(e,t,n){"use strict";e.exports=n(25)},function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}function o(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}function s(e){return 1===(e.buttons||e.which||e.button)}function l(){var e=document.createElement("div");e.style.cssText="position:fixed; top: 0; left: 0",document.body.appendChild(e);var t=e.getBoundingClientRect();return document.body.removeChild(e),[t.left,t.top]}function c(){return Math.abs(1-document.body.clientWidth/window.innerWidth)>.02}Object.defineProperty(t,"__esModule",{value:!0});var p=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,u=e[Symbol.iterator]();!(r=(a=u.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&u.return&&u.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),f=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),d=n(14),h=r(d),g=n(7),y=r(g),m=function(e){function t(e){i(this,t);var n=a(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.addListeners=function(e){e.addEventListener("mousedown",function(e){n.handleMouseDown(e)},!1),e.addEventListener("touchstart",function(e){n.handleTouchStart(e)},!1),e.addEventListener("touchmove",n.handleTouchMove,{passive:!1}),e.addEventListener("touchend",n.handleTouchEnd)},n.buildCustomEvent=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=void 0;return"function"!=typeof window.CustomEvent?(r=document.createEvent("CustomEvent"),r.initCustomEvent(e,!0,!0,{})):r=new CustomEvent(e,{bubbles:!0,cancelable:!0}),Object.assign(r,{dragData:n.props.dragData,dragElem:n.dragElem,containerElem:n.containerElem,sourceElem:n.sourceElem},t),r},n.setCurrentTarget=function(e,t){n.dragElem.style.zIndex=-1;var r=document.elementFromPoint(e,t)||document.body;n.dragElem.style.zIndex=n.props.zIndex,n.currentTarget=n.dragElem.contains(r)?document.body:r},n.setFixedOffset=function(){if(c()){var e=l(),t=p(e,2);n.fixedOffsetLeft=t[0],n.fixedOffsetTop=t[1]}},n.doScroll=function(){window.scrollBy(n.xScroll,n.yScroll),n.setFixedOffset()},n.startScrolling=function(e,t){var r=[e,t];n.xScroll=r[0],n.yScroll=r[1],n.scrollTimer||(n.scrollTimer=setInterval(n.doScroll,50))},n.stopScrolling=function(){clearInterval(n.scrollTimer),n.scrollTimer=null},n.generateEnterLeaveEvents=function(e,t){var r=n.props.targetKey;n.setCurrentTarget(e,t),n.currentTarget!==n.prevTarget&&(n.prevTarget&&n.prevTarget.dispatchEvent(n.buildCustomEvent(r+"DragLeave")),n.currentTarget&&n.currentTarget.dispatchEvent(n.buildCustomEvent(r+"DragEnter"))),n.prevTarget=n.currentTarget},n.generateDropEvent=function(e,t){n.setCurrentTarget(e,t);var r=n.buildCustomEvent(n.props.targetKey+"Drop",{x:e,y:t});n.currentTarget.dispatchEvent(r)},n.handleMouseDown=function(e){s(e)&&!n.props.noDragging&&(document.addEventListener("mousemove",n.handleMouseMove),document.addEventListener("mouseup",n.handleMouseUp),n.startDrag(e.clientX,e.clientY))},n.handleTouchStart=function(e){n.props.noDragging||(e.stopPropagation(),n.setFixedOffset(),n.startDrag(e.targetTouches[0].clientX,e.targetTouches[0].clientY))},n.startDrag=function(e,t){document.addEventListener(n.props.targetKey+"Dropped",n.props.onDrop);var r=n.containerElem.getBoundingClientRect();n.setState({clicked:!0,leftOffset:r.left-e,topOffset:r.top-t,left:r.left,top:r.top}),n.props.onDragStart(n.props.dragData)},n.handleMouseMove=function(e){n.props.noDragging||(e.preventDefault(),n.state.clicked&&(n.drag(e.clientX,e.clientY),window.getSelection().removeAllRanges()))},n.handleTouchMove=function(e){n.props.noDragging||(e.preventDefault(),n.state.clicked&&n.drag(e.targetTouches[0].clientX,e.targetTouches[0].clientY))},n.getOffscreenCoordinates=function(e,t){var n=window.innerWidth-10,r=window.innerHeight-10,o=e<10?e-10:e>n?e-n:0,i=t<10?t-10:t>r?t-r:0;return!(!i&&!o)&&[o,i]},n.drag=function(e,t){n.generateEnterLeaveEvents(e,t);var r={dragging:!0},i=n.getOffscreenCoordinates(e,t);i?n.startScrolling.apply(n,o(i)):(n.stopScrolling(),n.props.yOnly||(r.left=n.state.leftOffset+e-n.fixedOffsetLeft),n.props.xOnly||(r.top=n.state.topOffset+t-n.fixedOffsetTop)),n.setState(r),n.props.onDrag(n.props.dragData,n.currentTarget,e,t)},n.handleMouseUp=function(e){n.setState({clicked:!1}),n.state.dragging&&(document.removeEventListener("mousemove",n.handleMouseMove),document.removeEventListener("mouseup",n.handleMouseUp),n.drop(e.clientX,e.clientY),window.getSelection().removeAllRanges())},n.handleTouchEnd=function(e){n.setState({clicked:!1}),n.state.dragging&&n.drop(e.changedTouches[0].clientX,e.changedTouches[0].clientY)},n.drop=function(e,t){n.stopScrolling(),n.generateDropEvent(e,t),document.removeEventListener(n.props.targetKey+"Dropped",n.props.onDrop),n._isMounted&&n.setState({dragging:!1}),n.props.onDragEnd(n.props.dragData,n.currentTarget,e,t)},n.getDisplayMode=function(){return!n.state.dragging||n.props.dragClone||n.props.customDragElement?"normal":n.props.disappearDraggedElement?"disappeared":"hidden"},n.state={leftOffset:0,topOffset:0,left:0,top:0,clicked:!1,dragging:!1},n.dragElem=null,n.containerElem=null,n.sourceElem=null,n.currentTarget=null,n.prevTarget=null,n._isMounted=!0,n.fixedOffsetLeft=0,n.fixedOffsetTop=0,n.scrollTimer=null,n.xScroll=0,n.yScroll=0,n}return u(t,e),f(t,[{key:"componentDidMount",value:function(){for(var e=this.containerElem.getElementsByTagName("IMG"),t=0;t<e.length;t+=1)e[t].setAttribute("draggable","false");if(this.props.dragHandleClassName)for(var n=this.containerElem.getElementsByClassName(this.props.dragHandleClassName),r=0;r<n.length;r+=1)this.addListeners(n[r]),n[r].style.cursor="move";else this.addListeners(this.containerElem),this.containerElem.style.cursor="move"}},{key:"componentWillUnmount",value:function(){this._isMounted=!1}},{key:"render",value:function(){var e=this,t=this.props.render?this.props.render(this.state):this.props.children,n=this.getDisplayMode(),r=void 0;r=this.props.customDragElement?this.props.customDragElement:t;var o={position:"fixed",cursor:"move",left:this.state.left,top:this.state.top,zIndex:this.props.zIndex,opacity:this.props.dragElemOpacity,display:this.state.dragging?"block":"none"},i=h.default.createElement("div",{className:"ddcontainerghost",style:o,ref:function(t){e.dragElem=t}},r),a={position:"disappeared"===n?"absolute":"relative",display:"inline-block"},u={display:"disappeared"===n?"none":"inherit",visibility:"hidden"===n?"hidden":"inherit"};return h.default.createElement("div",{className:"ddcontainer",style:a,ref:function(t){e.containerElem=t}},h.default.createElement("span",{className:"ddcontainersource",style:u,ref:function(t){e.sourceElem=t}},t),i)}}]),t}(h.default.Component);m.propTypes={children:y.default.node,targetKey:y.default.string,customDragElement:y.default.oneOfType([y.default.string,y.default.node]),disappearDraggedElement:y.default.bool,dragClone:y.default.bool,dragElemOpacity:y.default.number,dragData:y.default.object,dragHandleClassName:y.default.string,noDragging:y.default.bool,onDrop:y.default.func,onDrag:y.default.func,onDragEnd:y.default.func,onDragStart:y.default.func,render:y.default.func,xOnly:y.default.bool,yOnly:y.default.bool,zIndex:y.default.number},m.defaultProps={targetKey:"ddc",children:null,customDragElement:null,disappearDraggedElement:!1,dragClone:!1,dragElemOpacity:.9,dragData:{},dragHandleClassName:"",onDragStart:function(){},onDrag:function(){},onDragEnd:function(){},onDrop:function(){},noDragging:!1,render:null,xOnly:!1,yOnly:!1,zIndex:1e3},t.default=m},function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function i(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function a(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var u=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),s=n(14),l=r(s),c=n(7),p=r(c),f=function(e){function t(e){o(this,t);var n=i(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.handleDrop=function(e){var t=n.createEvent(n.props.targetKey+"Dropped",{dragData:e.dragData,dropElem:n.elem,dropData:n.props.dropData});e.containerElem.dispatchEvent(t),n.props.onHit(e),n.setState({highlighted:!1})},n.handleDragEnter=function(e){console.log("enter");var t=e;n.props.highlightClassName&&n.setState({highlighted:!0}),n.props.onDragEnter(t)},n.handleDragLeave=function(e){var t=e;n.props.highlightClassName&&n.setState({highlighted:!1}),n.props.onDragLeave(t)},n.elem=null,n.state={highlighted:!1},n}return a(t,e),u(t,[{key:"componentDidMount",value:function(){this.elem.addEventListener(this.props.targetKey+"DragEnter",this.handleDragEnter,!1),this.elem.addEventListener(this.props.targetKey+"DragLeave",this.handleDragLeave,!1),this.elem.addEventListener(this.props.targetKey+"Drop",this.handleDrop,!1)}},{key:"createEvent",value:function(e,t){var n=void 0;return"function"!=typeof window.CustomEvent?(n=document.createEvent("CustomEvent"),n.initCustomEvent(e,!0,!0,{})):n=new CustomEvent(e,{bubbles:!0,cancelable:!0}),Object.assign(n,t),n}},{key:"render",value:function(){var e=this,t="droptarget "+(this.state.highlighted?this.props.highlightClassName:"");return l.default.createElement("span",{ref:function(t){e.elem=t},className:t},this.props.render?this.props.render():this.props.children)}}]),t}(l.default.Component);f.propTypes={children:p.default.node,render:p.default.func,highlightClassName:p.default.string,targetKey:p.default.string,dropData:p.default.object,onDragEnter:p.default.func,onDragLeave:p.default.func,onHit:p.default.func},f.defaultProps={children:null,targetKey:"ddc",onDragEnter:function(){},onDragLeave:function(){},onHit:function(){return function(){}},dropData:{},highlightClassName:"highlighted",render:null},t.default=f},function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o=n(15),i=r(o),a=n(16),u=r(a);e.exports={DragDropContainer:i.default,DropTarget:u.default}},function(e,t,n){"use strict";function r(e){return e}function o(e,t,n){function o(e,t){var n=v.hasOwnProperty(t)?v[t]:null;_.hasOwnProperty(t)&&u("OVERRIDE_BASE"===n,"ReactClassInterface: You are attempting to override `%s` from your class specification. Ensure that your method names do not overlap with React methods.",t),e&&u("DEFINE_MANY"===n||"DEFINE_MANY_MERGED"===n,"ReactClassInterface: You are attempting to define `%s` on your component more than once. This conflict may be due to a mixin.",t)}function l(e,n){if(n){u("function"!=typeof n,"ReactClass: You're attempting to use a component class or function as a mixin. Instead, just use a regular object."),u(!t(n),"ReactClass: You're attempting to use a component as a mixin. Instead, just use a regular object.");var r=e.prototype,i=r.__reactAutoBindPairs;n.hasOwnProperty(s)&&E.mixins(e,n.mixins);for(var a in n)if(n.hasOwnProperty(a)&&a!==s){var l=n[a],c=r.hasOwnProperty(a);if(o(c,a),E.hasOwnProperty(a))E[a](e,l);else{var p=v.hasOwnProperty(a),h="function"==typeof l,g=h&&!p&&!c&&!1!==n.autobind;if(g)i.push(a,l),r[a]=l;else if(c){var y=v[a];u(p&&("DEFINE_MANY_MERGED"===y||"DEFINE_MANY"===y),"ReactClass: Unexpected spec policy %s for key %s when mixing in component specs.",y,a),"DEFINE_MANY_MERGED"===y?r[a]=f(r[a],l):"DEFINE_MANY"===y&&(r[a]=d(r[a],l))}else r[a]=l}}}else;}function c(e,t){if(t)for(var n in t){var r=t[n];if(t.hasOwnProperty(n)){var o=n in E;u(!o,'ReactClass: You are attempting to define a reserved property, `%s`, that shouldn\'t be on the "statics" key. Define it as an instance property instead; it will still be accessible on the constructor.',n);var i=n in e;if(i){var a=b.hasOwnProperty(n)?b[n]:null;return u("DEFINE_MANY_MERGED"===a,"ReactClass: You are attempting to define `%s` on your component more than once. This conflict may be due to a mixin.",n),void(e[n]=f(e[n],r))}e[n]=r}}}function p(e,t){u(e&&t&&"object"==typeof e&&"object"==typeof t,"mergeIntoWithNoDuplicateKeys(): Cannot merge non-objects.");for(var n in t)t.hasOwnProperty(n)&&(u(void 0===e[n],"mergeIntoWithNoDuplicateKeys(): Tried to merge two objects with the same key: `%s`. This conflict may be due to a mixin; in particular, this may be caused by two getInitialState() or getDefaultProps() methods returning objects with clashing keys.",n),e[n]=t[n]);return e}function f(e,t){return function(){var n=e.apply(this,arguments),r=t.apply(this,arguments);if(null==n)return r;if(null==r)return n;var o={};return p(o,n),p(o,r),o}}function d(e,t){return function(){e.apply(this,arguments),t.apply(this,arguments)}}function h(e,t){var n=t.bind(e);return n}function g(e){for(var t=e.__reactAutoBindPairs,n=0;n<t.length;n+=2){var r=t[n],o=t[n+1];e[r]=h(e,o)}}function y(e){var t=r(function(e,r,o){this.__reactAutoBindPairs.length&&g(this),this.props=e,this.context=r,this.refs=a,this.updater=o||n,this.state=null;var i=this.getInitialState?this.getInitialState():null;u("object"==typeof i&&!Array.isArray(i),"%s.getInitialState(): must return an object or null",t.displayName||"ReactCompositeComponent"),this.state=i});t.prototype=new w,t.prototype.constructor=t,t.prototype.__reactAutoBindPairs=[],m.forEach(l.bind(null,t)),l(t,D),l(t,e),l(t,x),t.getDefaultProps&&(t.defaultProps=t.getDefaultProps()),u(t.prototype.render,"createClass(...): Class specification must implement a `render` method.");for(var o in v)t.prototype[o]||(t.prototype[o]=null);return t}var m=[],v={mixins:"DEFINE_MANY",statics:"DEFINE_MANY",propTypes:"DEFINE_MANY",contextTypes:"DEFINE_MANY",childContextTypes:"DEFINE_MANY",getDefaultProps:"DEFINE_MANY_MERGED",getInitialState:"DEFINE_MANY_MERGED",getChildContext:"DEFINE_MANY_MERGED",render:"DEFINE_ONCE",componentWillMount:"DEFINE_MANY",componentDidMount:"DEFINE_MANY",componentWillReceiveProps:"DEFINE_MANY",shouldComponentUpdate:"DEFINE_ONCE",componentWillUpdate:"DEFINE_MANY",componentDidUpdate:"DEFINE_MANY",componentWillUnmount:"DEFINE_MANY",UNSAFE_componentWillMount:"DEFINE_MANY",UNSAFE_componentWillReceiveProps:"DEFINE_MANY",UNSAFE_componentWillUpdate:"DEFINE_MANY",updateComponent:"OVERRIDE_BASE"},b={getDerivedStateFromProps:"DEFINE_MANY_MERGED"},E={displayName:function(e,t){e.displayName=t},mixins:function(e,t){if(t)for(var n=0;n<t.length;n++)l(e,t[n])},childContextTypes:function(e,t){e.childContextTypes=i({},e.childContextTypes,t)},contextTypes:function(e,t){e.contextTypes=i({},e.contextTypes,t)},getDefaultProps:function(e,t){e.getDefaultProps?e.getDefaultProps=f(e.getDefaultProps,t):e.getDefaultProps=t},propTypes:function(e,t){e.propTypes=i({},e.propTypes,t)},statics:function(e,t){c(e,t)},autobind:function(){}},D={componentDidMount:function(){this.__isMounted=!0}},x={componentWillUnmount:function(){this.__isMounted=!1}},_={replaceState:function(e,t){this.updater.enqueueReplaceState(this,e,t)},isMounted:function(){return!!this.__isMounted}},w=function(){};return i(w.prototype,e.prototype,_),y}var i=n(2),a=n(6),u=n(1),s="mixins";e.exports=o},function(e,t,n){"use strict";function r(e,t,n,r,o){}e.exports=r},function(e,t,n){"use strict";var r=n(22);e.exports=function(e){return r(e,!1)}},function(e,t,n){"use strict";function r(){}var o=n(8);e.exports=function(){function e(e,t,n,r,i,a){if(a!==o){var u=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw u.name="Invariant Violation",u}}function t(){return e}e.isRequired=e;var n={array:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:t,element:e,instanceOf:t,node:e,objectOf:t,oneOf:t,oneOfType:t,shape:t,exact:t};return n.checkPropTypes=r,n.PropTypes=n,n}},function(e,t,n){"use strict";function r(){return null}var o=n(2),i=n(8),a=n(19),u=function(){};e.exports=function(e,t){function n(e){var t=e&&(O&&e[O]||e[P]);if("function"==typeof t)return t}function s(e,t){return e===t?0!==e||1/e==1/t:e!==e&&t!==t}function l(e){this.message=e,this.stack=""}function c(e){function n(n,r,o,a,u,s,c){if(a=a||T,s=s||o,c!==i){if(t){var p=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");throw p.name="Invariant Violation",p}}return null==r[o]?n?new l(null===r[o]?"The "+u+" `"+s+"` is marked as required in `"+a+"`, but its value is `null`.":"The "+u+" `"+s+"` is marked as required in `"+a+"`, but its value is `undefined`."):null:e(r,o,a,u,s)}var r=n.bind(null,!1);return r.isRequired=n.bind(null,!0),r}function p(e){function t(t,n,r,o,i,a){var u=t[n];if(D(u)!==e)return new l("Invalid "+o+" `"+i+"` of type `"+x(u)+"` supplied to `"+r+"`, expected `"+e+"`.");return null}return c(t)}function f(e){function t(t,n,r,o,a){if("function"!=typeof e)return new l("Property `"+a+"` of component `"+r+"` has invalid PropType notation inside arrayOf.");var u=t[n];if(!Array.isArray(u)){return new l("Invalid "+o+" `"+a+"` of type `"+D(u)+"` supplied to `"+r+"`, expected an array.")}for(var s=0;s<u.length;s++){var c=e(u,s,r,o,a+"["+s+"]",i);if(c instanceof Error)return c}return null}return c(t)}function d(e){function t(t,n,r,o,i){if(!(t[n]instanceof e)){var a=e.name||T;return new l("Invalid "+o+" `"+i+"` of type `"+w(t[n])+"` supplied to `"+r+"`, expected instance of `"+a+"`.")}return null}return c(t)}function h(e){function t(t,n,r,o,i){for(var a=t[n],u=0;u<e.length;u++)if(s(a,e[u]))return null;return new l("Invalid "+o+" `"+i+"` of value `"+a+"` supplied to `"+r+"`, expected one of "+JSON.stringify(e)+".")}return Array.isArray(e)?c(t):r}function g(e){function t(t,n,r,o,a){if("function"!=typeof e)return new l("Property `"+a+"` of component `"+r+"` has invalid PropType notation inside objectOf.");var u=t[n],s=D(u);if("object"!==s)return new l("Invalid "+o+" `"+a+"` of type `"+s+"` supplied to `"+r+"`, expected an object.");for(var c in u)if(u.hasOwnProperty(c)){var p=e(u,c,r,o,a+"."+c,i);if(p instanceof Error)return p}return null}return c(t)}function y(e){function t(t,n,r,o,a){for(var u=0;u<e.length;u++){if(null==(0,e[u])(t,n,r,o,a,i))return null}return new l("Invalid "+o+" `"+a+"` supplied to `"+r+"`.")}if(!Array.isArray(e))return r;for(var n=0;n<e.length;n++){var o=e[n];if("function"!=typeof o)return u("Invalid argument supplied to oneOfType. Expected an array of check functions, but received "+_(o)+" at index "+n+"."),r}return c(t)}function m(e){function t(t,n,r,o,a){var u=t[n],s=D(u);if("object"!==s)return new l("Invalid "+o+" `"+a+"` of type `"+s+"` supplied to `"+r+"`, expected `object`.");for(var c in e){var p=e[c];if(p){var f=p(u,c,r,o,a+"."+c,i);if(f)return f}}return null}return c(t)}function v(e){function t(t,n,r,a,u){var s=t[n],c=D(s);if("object"!==c)return new l("Invalid "+a+" `"+u+"` of type `"+c+"` supplied to `"+r+"`, expected `object`.");var p=o({},t[n],e);for(var f in p){var d=e[f];if(!d)return new l("Invalid "+a+" `"+u+"` key `"+f+"` supplied to `"+r+"`.\nBad object: "+JSON.stringify(t[n],null,"  ")+"\nValid keys: "+JSON.stringify(Object.keys(e),null,"  "));var h=d(s,f,r,a,u+"."+f,i);if(h)return h}return null}return c(t)}function b(t){switch(typeof t){case"number":case"string":case"undefined":return!0;case"boolean":return!t;case"object":if(Array.isArray(t))return t.every(b);if(null===t||e(t))return!0;var r=n(t);if(!r)return!1;var o,i=r.call(t);if(r!==t.entries){for(;!(o=i.next()).done;)if(!b(o.value))return!1}else for(;!(o=i.next()).done;){var a=o.value;if(a&&!b(a[1]))return!1}return!0;default:return!1}}function E(e,t){return"symbol"===e||("Symbol"===t["@@toStringTag"]||"function"==typeof Symbol&&t instanceof Symbol)}function D(e){var t=typeof e;return Array.isArray(e)?"array":e instanceof RegExp?"object":E(t,e)?"symbol":t}function x(e){if(void 0===e||null===e)return""+e;var t=D(e);if("object"===t){if(e instanceof Date)return"date";if(e instanceof RegExp)return"regexp"}return t}function _(e){var t=x(e);switch(t){case"array":case"object":return"an "+t;case"boolean":case"date":case"regexp":return"a "+t;default:return t}}function w(e){return e.constructor&&e.constructor.name?e.constructor.name:T}var O="function"==typeof Symbol&&Symbol.iterator,P="@@iterator",T="<<anonymous>>",N={array:p("array"),bool:p("boolean"),func:p("function"),number:p("number"),object:p("object"),string:p("string"),symbol:p("symbol"),any:function(){return c(r)}(),arrayOf:f,element:function(){function t(t,n,r,o,i){var a=t[n];if(!e(a)){return new l("Invalid "+o+" `"+i+"` of type `"+D(a)+"` supplied to `"+r+"`, expected a single ReactElement.")}return null}return c(t)}(),instanceOf:d,node:function(){function e(e,t,n,r,o){return b(e[t])?null:new l("Invalid "+r+" `"+o+"` supplied to `"+n+"`, expected a ReactNode.")}return c(e)}(),objectOf:g,oneOf:h,oneOfType:y,shape:m,exact:v};return l.prototype=Error.prototype,N.checkPropTypes=a,N.PropTypes=N,N}},function(e,t,n){"use strict";function r(e){var t={"=":"=0",":":"=2"};return"$"+(""+e).replace(/[=:]/g,function(e){return t[e]})}function o(e){var t=/(=0|=2)/g,n={"=0":"=","=2":":"};return(""+("."===e[0]&&"$"===e[1]?e.substring(2):e.substring(1))).replace(t,function(e){return n[e]})}var i={escape:r,unescape:o};e.exports=i},function(e,t,n){"use strict";var r=n(3),o=(n(1),function(e){var t=this;if(t.instancePool.length){var n=t.instancePool.pop();return t.call(n,e),n}return new t(e)}),i=function(e,t){var n=this;if(n.instancePool.length){var r=n.instancePool.pop();return n.call(r,e,t),r}return new n(e,t)},a=function(e,t,n){var r=this;if(r.instancePool.length){var o=r.instancePool.pop();return r.call(o,e,t,n),o}return new r(e,t,n)},u=function(e,t,n,r){var o=this;if(o.instancePool.length){var i=o.instancePool.pop();return o.call(i,e,t,n,r),i}return new o(e,t,n,r)},s=function(e){var t=this;e instanceof t||r("25"),e.destructor(),t.instancePool.length<t.poolSize&&t.instancePool.push(e)},l=o,c=function(e,t){var n=e;return n.instancePool=[],n.getPooled=t||l,n.poolSize||(n.poolSize=10),n.release=s,n},p={addPoolingTo:c,oneArgumentPooler:o,twoArgumentPooler:i,threeArgumentPooler:a,fourArgumentPooler:u};e.exports=p},function(e,t,n){"use strict";var r=n(2),o=n(9),i=n(26),a=n(27),u=n(0),s=n(28),l=n(29),c=n(30),p=n(33),f=u.createElement,d=u.createFactory,h=u.cloneElement,g=r,y=function(e){return e},m={Children:{map:i.map,forEach:i.forEach,count:i.count,toArray:i.toArray,only:p},Component:o.Component,PureComponent:o.PureComponent,createElement:f,cloneElement:h,isValidElement:u.isValidElement,PropTypes:s,createClass:c,createFactory:d,createMixin:y,DOM:a,version:l,__spread:g};e.exports=m},function(e,t,n){"use strict";function r(e){return(""+e).replace(E,"$&/")}function o(e,t){this.func=e,this.context=t,this.count=0}function i(e,t,n){var r=e.func,o=e.context;r.call(o,t,e.count++)}function a(e,t,n){if(null==e)return e;var r=o.getPooled(t,n);m(e,i,r),o.release(r)}function u(e,t,n,r){this.result=e,this.keyPrefix=t,this.func=n,this.context=r,this.count=0}function s(e,t,n){var o=e.result,i=e.keyPrefix,a=e.func,u=e.context,s=a.call(u,t,e.count++);Array.isArray(s)?l(s,o,n,y.thatReturnsArgument):null!=s&&(g.isValidElement(s)&&(s=g.cloneAndReplaceKey(s,i+(!s.key||t&&t.key===s.key?"":r(s.key)+"/")+n)),o.push(s))}function l(e,t,n,o,i){var a="";null!=n&&(a=r(n)+"/");var l=u.getPooled(t,a,o,i);m(e,s,l),u.release(l)}function c(e,t,n){if(null==e)return e;var r=[];return l(e,r,null,t,n),r}function p(e,t,n){return null}function f(e,t){return m(e,p,null)}function d(e){var t=[];return l(e,t,null,y.thatReturnsArgument),t}var h=n(24),g=n(0),y=n(5),m=n(34),v=h.twoArgumentPooler,b=h.fourArgumentPooler,E=/\/+/g;o.prototype.destructor=function(){this.func=null,this.context=null,this.count=0},h.addPoolingTo(o,v),u.prototype.destructor=function(){this.result=null,this.keyPrefix=null,this.func=null,this.context=null,this.count=0},h.addPoolingTo(u,b);var D={forEach:a,map:c,mapIntoWithKeyPrefixInternal:l,count:f,toArray:d};e.exports=D},function(e,t,n){"use strict";var r=n(0),o=r.createFactory,i={a:o("a"),abbr:o("abbr"),address:o("address"),area:o("area"),article:o("article"),aside:o("aside"),audio:o("audio"),b:o("b"),base:o("base"),bdi:o("bdi"),bdo:o("bdo"),big:o("big"),blockquote:o("blockquote"),body:o("body"),br:o("br"),button:o("button"),canvas:o("canvas"),caption:o("caption"),cite:o("cite"),code:o("code"),col:o("col"),colgroup:o("colgroup"),data:o("data"),datalist:o("datalist"),dd:o("dd"),del:o("del"),details:o("details"),dfn:o("dfn"),dialog:o("dialog"),div:o("div"),dl:o("dl"),dt:o("dt"),em:o("em"),embed:o("embed"),fieldset:o("fieldset"),figcaption:o("figcaption"),figure:o("figure"),footer:o("footer"),form:o("form"),h1:o("h1"),h2:o("h2"),h3:o("h3"),h4:o("h4"),h5:o("h5"),h6:o("h6"),head:o("head"),header:o("header"),hgroup:o("hgroup"),hr:o("hr"),html:o("html"),i:o("i"),iframe:o("iframe"),img:o("img"),input:o("input"),ins:o("ins"),kbd:o("kbd"),keygen:o("keygen"),label:o("label"),legend:o("legend"),li:o("li"),link:o("link"),main:o("main"),map:o("map"),mark:o("mark"),menu:o("menu"),menuitem:o("menuitem"),meta:o("meta"),meter:o("meter"),nav:o("nav"),noscript:o("noscript"),object:o("object"),ol:o("ol"),optgroup:o("optgroup"),option:o("option"),output:o("output"),p:o("p"),param:o("param"),picture:o("picture"),pre:o("pre"),progress:o("progress"),q:o("q"),rp:o("rp"),rt:o("rt"),ruby:o("ruby"),s:o("s"),samp:o("samp"),script:o("script"),section:o("section"),select:o("select"),small:o("small"),source:o("source"),span:o("span"),strong:o("strong"),style:o("style"),sub:o("sub"),summary:o("summary"),sup:o("sup"),table:o("table"),tbody:o("tbody"),td:o("td"),textarea:o("textarea"),tfoot:o("tfoot"),th:o("th"),thead:o("thead"),time:o("time"),title:o("title"),tr:o("tr"),track:o("track"),u:o("u"),ul:o("ul"),var:o("var"),video:o("video"),wbr:o("wbr"),circle:o("circle"),clipPath:o("clipPath"),defs:o("defs"),ellipse:o("ellipse"),g:o("g"),image:o("image"),line:o("line"),linearGradient:o("linearGradient"),mask:o("mask"),path:o("path"),pattern:o("pattern"),polygon:o("polygon"),polyline:o("polyline"),radialGradient:o("radialGradient"),rect:o("rect"),stop:o("stop"),svg:o("svg"),text:o("text"),tspan:o("tspan")};e.exports=i},function(e,t,n){"use strict";var r=n(0),o=r.isValidElement,i=n(20);e.exports=i(o)},function(e,t,n){"use strict";e.exports="15.6.2"},function(e,t,n){"use strict";var r=n(9),o=r.Component,i=n(0),a=i.isValidElement,u=n(12),s=n(18);e.exports=s(o,a,u)},function(e,t,n){"use strict";function r(e){var t=e&&(o&&e[o]||e[i]);if("function"==typeof t)return t}var o="function"==typeof Symbol&&Symbol.iterator,i="@@iterator";e.exports=r},function(e,t,n){"use strict";var r=function(){};e.exports=r},function(e,t,n){"use strict";function r(e){return i.isValidElement(e)||o("143"),e}var o=n(3),i=n(0);n(1);e.exports=r},function(e,t,n){"use strict";function r(e,t){return e&&"object"==typeof e&&null!=e.key?l.escape(e.key):t.toString(36)}function o(e,t,n,i){var f=typeof e;if("undefined"!==f&&"boolean"!==f||(e=null),null===e||"string"===f||"number"===f||"object"===f&&e.$$typeof===u)return n(i,e,""===t?c+r(e,0):t),1;var d,h,g=0,y=""===t?c:t+p;if(Array.isArray(e))for(var m=0;m<e.length;m++)d=e[m],h=y+r(d,m),g+=o(d,h,n,i);else{var v=s(e);if(v){var b,E=v.call(e);if(v!==e.entries)for(var D=0;!(b=E.next()).done;)d=b.value,h=y+r(d,D++),g+=o(d,h,n,i);else for(;!(b=E.next()).done;){var x=b.value;x&&(d=x[1],h=y+l.escape(x[0])+p+r(d,0),g+=o(d,h,n,i))}}else if("object"===f){var _="",w=String(e);a("31","[object Object]"===w?"object with keys {"+Object.keys(e).join(", ")+"}":w,_)}}return g}function i(e,t,n){return null==e?0:o(e,"",t,n)}var a=n(3),u=(n(10),n(11)),s=n(31),l=(n(1),n(23)),c=(n(4),"."),p=":";e.exports=i}])});
+},{}],"src/Level4/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44211,6 +41432,7 @@ var _VBMV_A_L4_2 = _interopRequireDefault(require("../../assets/level4/audio/VBM
 var _VBMV_A_L4_3 = _interopRequireDefault(require("../../assets/level4/audio/VBMV_A_L4_3.mp3"));
 var _VBMV_A_L4_4 = _interopRequireDefault(require("../../assets/level4/audio/VBMV_A_L4_8.mp3"));
 var _VBMV_A_L4_5 = _interopRequireDefault(require("../../assets/level4/audio/VBMV_A_L4_9.mp3"));
+var _VBMV_A_L4_6 = _interopRequireDefault(require("../../assets/level4/audio/VBMV_A_L4_36.mp3"));
 var _slab_level_ = _interopRequireDefault(require("../../assets/level4/images/slab_level_4.png"));
 var _Background_music_ = _interopRequireDefault(require("../../assets/common/audio/Background_music_1.mp3"));
 var _For_level_completion = _interopRequireDefault(require("../../assets/common/audio/For_level_completion.mp3"));
@@ -44220,7 +41442,8 @@ var _Threedots = _interopRequireDefault(require("../components/common/Threedots/
 var _PlayAgain = _interopRequireDefault(require("../components/common/Play_Agian/PlayAgain"));
 var _level = require("../constants/level4");
 var _Mascot3 = _interopRequireDefault(require("../components/common/Mascot"));
-var _reactDraggable = _interopRequireDefault(require("react-draggable"));
+var _reactDragDropContainer = require("react-drag-drop-container");
+var _helper = require("../helper");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -44235,6 +41458,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i.return && (_r = _i.return(), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; } // import Canvas from '../components/common/Canvas_Confetti/canvas';
 // import { level3DemoData, level3Data } from "../constants/level3";
+var correctAnswerCount = 0;
+var initialX = null;
+var initialY = null;
 var Index = function Index() {
   var _useState = (0, _react.useState)(true),
     _useState2 = _slicedToArray(_useState, 2),
@@ -44256,7 +41482,7 @@ var Index = function Index() {
     _useState10 = _slicedToArray(_useState9, 2),
     playThirdAudio = _useState10[0],
     setPlayThirdAudio = _useState10[1];
-  var _useState11 = (0, _react.useState)(false),
+  var _useState11 = (0, _react.useState)(true),
     _useState12 = _slicedToArray(_useState11, 2),
     isMusicPlaying = _useState12[0],
     setMusicPlaying = _useState12[1];
@@ -44278,86 +41504,101 @@ var Index = function Index() {
     setSoundFilesEnded = _useState20[1];
   var _useState21 = (0, _react.useState)(_toConsumableArray(_level.level4DemoData)),
     _useState22 = _slicedToArray(_useState21, 2),
-    levelData = _useState22[0],
-    setLevelData = _useState22[1];
+    demoDataLevel4 = _useState22[0],
+    setDemoDataLevel4 = _useState22[1];
   var _useState23 = (0, _react.useState)(_toConsumableArray(_level.level4DemoBasket)),
     _useState24 = _slicedToArray(_useState23, 2),
-    demoBasket = _useState24[0],
-    setDemoBasket = _useState24[1];
-  var _useState25 = (0, _react.useState)(false),
+    demoBasketLevel4 = _useState24[0],
+    setDemoBasketLevel4 = _useState24[1];
+  var _useState25 = (0, _react.useState)(_toConsumableArray(_level.level4Data[0])),
     _useState26 = _slicedToArray(_useState25, 2),
-    showGreenTick = _useState26[0],
-    setShowGreenTick = _useState26[1];
-  var _useState27 = (0, _react.useState)(false),
+    levelData = _useState26[0],
+    setLevelData = _useState26[1];
+  var _useState27 = (0, _react.useState)(_toConsumableArray(_level.level4Basket[0])),
     _useState28 = _slicedToArray(_useState27, 2),
-    showCursorHand = _useState28[0],
-    setShowCursorHand = _useState28[1];
+    demoBasket = _useState28[0],
+    setDemoBasket = _useState28[1];
   var _useState29 = (0, _react.useState)(false),
     _useState30 = _slicedToArray(_useState29, 2),
-    playFourthAudio = _useState30[0],
-    setPlayFourthAudio = _useState30[1];
+    showGreenTick = _useState30[0],
+    setShowGreenTick = _useState30[1];
   var _useState31 = (0, _react.useState)(false),
     _useState32 = _slicedToArray(_useState31, 2),
-    playLevelThreeAudio = _useState32[0],
-    setPlayLevelThreeAudio = _useState32[1];
+    showCursorHand = _useState32[0],
+    setShowCursorHand = _useState32[1];
   var _useState33 = (0, _react.useState)(false),
     _useState34 = _slicedToArray(_useState33, 2),
-    showGridSet = _useState34[0],
-    setShowGridSet = _useState34[1];
+    playFourthAudio = _useState34[0],
+    setPlayFourthAudio = _useState34[1];
+  var _useState35 = (0, _react.useState)(false),
+    _useState36 = _slicedToArray(_useState35, 2),
+    playLevelThreeAudio = _useState36[0],
+    setPlayLevelThreeAudio = _useState36[1];
+  var _useState37 = (0, _react.useState)(false),
+    _useState38 = _slicedToArray(_useState37, 2),
+    showGridSet = _useState38[0],
+    setShowGridSet = _useState38[1];
   // const [levelData1, setLevelData1] = useState(level3Data[0]);
-  var _useState35 = (0, _react.useState)({
+  var _useState39 = (0, _react.useState)({
       display: false,
       index: 0
     }),
-    _useState36 = _slicedToArray(_useState35, 2),
-    showModal = _useState36[0],
-    setShowModal = _useState36[1];
-  var _useState37 = (0, _react.useState)(null),
-    _useState38 = _slicedToArray(_useState37, 2),
-    selectedImageId = _useState38[0],
-    setSelectedImageId = _useState38[1];
-  var _useState39 = (0, _react.useState)(false),
     _useState40 = _slicedToArray(_useState39, 2),
-    showTick = _useState40[0],
-    setShowTick = _useState40[1];
-  var _useState41 = (0, _react.useState)(false),
+    showModal = _useState40[0],
+    setShowModal = _useState40[1];
+  var _useState41 = (0, _react.useState)(null),
     _useState42 = _slicedToArray(_useState41, 2),
-    isCorrectImageClicked = _useState42[0],
-    setIsCorrectImageClicked = _useState42[1];
-  var _useState43 = (0, _react.useState)(0),
+    selectedImageId = _useState42[0],
+    setSelectedImageId = _useState42[1];
+  var _useState43 = (0, _react.useState)(false),
     _useState44 = _slicedToArray(_useState43, 2),
-    gameIndex = _useState44[0],
-    setGameIndex = _useState44[1];
+    showTick = _useState44[0],
+    setShowTick = _useState44[1];
   var _useState45 = (0, _react.useState)(false),
     _useState46 = _slicedToArray(_useState45, 2),
-    showAudioReplayCursor = _useState46[0],
-    setShowAudioReplayCursor = _useState46[1];
-  var _useState47 = (0, _react.useState)(false),
+    isCorrectImageClicked = _useState46[0],
+    setIsCorrectImageClicked = _useState46[1];
+  var _useState47 = (0, _react.useState)(0),
     _useState48 = _slicedToArray(_useState47, 2),
-    audioReplayEnded = _useState48[0],
-    setAudioReplayEnded = _useState48[1];
-  // Audio replay button state
+    gameIndex = _useState48[0],
+    setGameIndex = _useState48[1];
   var _useState49 = (0, _react.useState)(false),
     _useState50 = _slicedToArray(_useState49, 2),
-    isAudioPlaying = _useState50[0],
-    setIsAudioPlaying = _useState50[1];
+    showAudioReplayCursor = _useState50[0],
+    setShowAudioReplayCursor = _useState50[1];
   var _useState51 = (0, _react.useState)(false),
     _useState52 = _slicedToArray(_useState51, 2),
-    isButtonDisabled = _useState52[0],
-    setIsButtonDisabled = _useState52[1];
-  var _useState53 = (0, _react.useState)(true),
+    audioReplayEnded = _useState52[0],
+    setAudioReplayEnded = _useState52[1];
+  // Audio replay button state
+  var _useState53 = (0, _react.useState)(false),
     _useState54 = _slicedToArray(_useState53, 2),
-    isAudioReplayButtonActive = _useState54[0],
-    setIsAudioReplayButtonActive = _useState54[1];
-  var _useState55 = (0, _react.useState)(0),
+    isAudioPlaying = _useState54[0],
+    setIsAudioPlaying = _useState54[1];
+  var _useState55 = (0, _react.useState)(false),
     _useState56 = _slicedToArray(_useState55, 2),
-    score = _useState56[0],
-    setScore = _useState56[1];
-  var _useState57 = (0, _react.useState)(null),
+    isButtonDisabled = _useState56[0],
+    setIsButtonDisabled = _useState56[1];
+  var _useState57 = (0, _react.useState)(true),
     _useState58 = _slicedToArray(_useState57, 2),
-    currentAudioIndex = _useState58[0],
-    setCurrentAudioIndex = _useState58[1];
-
+    isAudioReplayButtonActive = _useState58[0],
+    setIsAudioReplayButtonActive = _useState58[1];
+  var _useState59 = (0, _react.useState)(0),
+    _useState60 = _slicedToArray(_useState59, 2),
+    score = _useState60[0],
+    setScore = _useState60[1];
+  var _useState61 = (0, _react.useState)(null),
+    _useState62 = _slicedToArray(_useState61, 2),
+    currentAudioIndex = _useState62[0],
+    setCurrentAudioIndex = _useState62[1];
+  var _useState63 = (0, _react.useState)([]),
+    _useState64 = _slicedToArray(_useState63, 2),
+    rightAnswerIndexArray = _useState64[0],
+    setRightAnswerIndexArray = _useState64[1];
+  var _useState65 = (0, _react.useState)(0),
+    _useState66 = _slicedToArray(_useState65, 2),
+    progress = _useState66[0],
+    setProgress = _useState66[1];
   /**
    * Mute Unmute Function
    */
@@ -44379,60 +41620,71 @@ var Index = function Index() {
     };
   }, [shouldPlayMusic, isMusicPlaying]);
   (0, _react.useEffect)(function () {
-    // setTimeout(() => {
-    //   if (gameIndex < level3Data.length) setLevelData1(level3Data[gameIndex]);
-    //   if (gameIndex === level3Data.length) {
-    //     setShowGridSet(false);
-    //     const audio = new Audio(For_level_completion);
-    //     audio.addEventListener("play", () => {
-    //       setScore(30);
-    //       var count = 200;
-    //       var defaults = {
-    //         origin: { y: 0.7 },
-    //       };
-    //       function fire(particleRatio, opts) {
-    //         confetti(
-    //           Object.assign({}, defaults, opts, {
-    //             particleCount: Math.floor(count * particleRatio),
-    //           })
-    //         );
-    //       }
-    //       fire(0.25, {
-    //         spread: 26,
-    //         startVelocity: 55,
-    //       });
-    //       fire(0.2, {
-    //         spread: 60,
-    //       });
-    //       fire(0.35, {
-    //         spread: 100,
-    //         decay: 0.91,
-    //         scalar: 0.8,
-    //       });
-    //       fire(0.1, {
-    //         spread: 120,
-    //         startVelocity: 25,
-    //         decay: 0.92,
-    //         scalar: 1.2,
-    //       });
-    //       fire(0.1, {
-    //         spread: 120,
-    //         startVelocity: 45,
-    //       });
-    //     });
-    //     audio.play();
-    //     setSoundFilesEnded(true);
-    //     const playNewGameAudio = new Audio(GL_A_5);
-    //     playNewGameAudio.play();
-    //   }
-    //   setShowTick(false);
-    //   setIsCorrectImageClicked(false);
-    //   setTimeout(() => {
-    //     gameIndex > 0 &&
-    //       gameIndex < level3Data.length &&
-    //       new Audio(level3Data[gameIndex][0].find_vegetable).play();
-    //   }, 500);
-    // }, 1500);
+    if (gameIndex < _level.level4Data.length) {
+      var gameArray = _toConsumableArray(_level.level4Data[gameIndex]);
+      gameArray = (0, _helper.shuffleArray)(gameArray);
+      setLevelData(gameArray);
+      if ([4, 8].includes(gameIndex)) {
+        var updatedProgress = progress;
+        updatedProgress = updatedProgress + 30;
+        setProgress(updatedProgress);
+      }
+      setDemoBasket(_level.level4Basket[gameIndex]);
+    }
+    if (gameIndex === _level.level4Data.length) {
+      var _updatedProgress = progress;
+      _updatedProgress = _updatedProgress + 40;
+      setProgress(_updatedProgress);
+      setShowGridSet(false);
+      var audio = new Audio(_For_level_completion.default);
+      audio.addEventListener("play", function () {
+        setScore(40);
+        var count = 200;
+        var defaults = {
+          origin: {
+            y: 0.7
+          }
+        };
+        function fire(particleRatio, opts) {
+          confetti(Object.assign({}, defaults, opts, {
+            particleCount: Math.floor(count * particleRatio)
+          }));
+        }
+        fire(0.25, {
+          spread: 26,
+          startVelocity: 55
+        });
+        fire(0.2, {
+          spread: 60
+        });
+        fire(0.35, {
+          spread: 100,
+          decay: 0.91,
+          scalar: 0.8
+        });
+        fire(0.1, {
+          spread: 120,
+          startVelocity: 25,
+          decay: 0.92,
+          scalar: 1.2
+        });
+        fire(0.1, {
+          spread: 120,
+          startVelocity: 45
+        });
+      });
+      audio.play();
+      setSoundFilesEnded(true);
+      var playNewGameAudio = new Audio(_GL_A_2.default);
+      playNewGameAudio.play();
+    }
+    // setShowTick(false);
+    // setIsCorrectImageClicked(false);
+
+    if (gameIndex > 0 && gameIndex < _level.level4Data.length) {
+      correctAnswerCount = 0;
+      setRightAnswerIndexArray([]);
+    }
   }, [gameIndex, setGameIndex]);
   (0, _react.useEffect)(function () {}, [showCursorHand, setShowCursorHand]);
 
@@ -44452,7 +41704,7 @@ var Index = function Index() {
     setStartPlay(false);
     setShowMascot(true);
     setSoundFilesEnded(false);
-    setScore(20);
+    setScore(30);
   };
 
   /**
@@ -44490,12 +41742,12 @@ var Index = function Index() {
     playAudioSequentially(0);
   };
   var playAudioSequentially = function playAudioSequentially(index) {
-    if (index >= demoBasket.length) {
+    if (index >= demoBasketLevel4.length) {
       setShowCursorHand(false);
       playLastAudio();
       return;
     }
-    var audioElement = new Audio(demoBasket[index].basket_sound);
+    var audioElement = new Audio(demoBasketLevel4[index].basket_sound);
     audioElement.addEventListener("play", function () {
       setShowCursorHand(true);
       setCurrentAudioIndex(index);
@@ -44506,10 +41758,17 @@ var Index = function Index() {
     });
     audioElement.play();
   };
+
   //  play last audio functionality
   var playLastAudio = function playLastAudio() {
     var lastAudioElement = new Audio(_VBMV_A_L4_4.default);
-    lastAudioElement.addEventListener("ended", function () {});
+    lastAudioElement.addEventListener("ended", function () {
+      var nextAudioElement = new Audio(_VBMV_A_L4_5.default);
+      nextAudioElement.addEventListener("ended", function () {
+        handleFourthAudioEnd();
+      });
+      nextAudioElement.play();
+    });
     lastAudioElement.play();
   };
 
@@ -44543,24 +41802,87 @@ var Index = function Index() {
   };
 
   // gameInstructionAudio
-  var gameInstructionAudio = function gameInstructionAudio(levelData) {
+  var gameInstructionAudio = function gameInstructionAudio() {
     if (!isButtonDisabled) {
-      var audio = new Audio(levelData[gameIndex].find_vegetable);
-      setIsAudioPlaying(true);
-      setIsButtonDisabled(true);
-      audio.addEventListener("ended", function () {
+      var findVegetableAudio = new Audio(_VBMV_A_L4_6.default);
+      findVegetableAudio.addEventListener("play", function () {
+        setIsCorrectImageClicked(true);
+        setIsAudioPlaying(true);
+        setIsButtonDisabled(true);
+      });
+      findVegetableAudio.addEventListener("ended", function () {
+        setIsCorrectImageClicked(false);
         setIsAudioPlaying(false);
         setIsButtonDisabled(false);
       });
-      audio.play();
+      findVegetableAudio.play();
     }
   };
+
+  // onDrop = (e) => {
+  //   console.log(e)
+  //   if (e.target.classList.contains("drop-target")) {
+  //     alert("Dropped!");
+  //     e.target.classList.remove('hovered');
+  //   }
+  // };
+
+  // dropRef.addEventListener('touchenter', (e) => {
+  //   console.log(e)
+  // })
+
+  // function allowDrop(img) {
+  //   img.preventDefault();
+  // }
+  // function drag(img) {
+  //   // console.log('hi', img)
+  //   new Audio(GL_A_19).play()
+  //   img.dataTransfer.setData("id", img.target.id);
+  //   img.dataTransfer.setData("name", img.target.name);
+  //   // img.target.style.position = 'fixed';
+  //   // img.target.style.top = 0;
+  //   // img.target.style.left = 0;
+
+  //   initialX = event.touches[0].clientX;
+  //   initialY = event.touches[0].clientY;
+  // }
+  function drop(event) {
+    console.log(event);
+    var dragData = event.dragData,
+      dropData = event.dropData;
+    var id = dragData.id,
+      name = dragData.name;
+    var basket = dropData.basket;
+    console.log(name, id, basket);
+    if (name === basket.basket_name) {
+      var array = _toConsumableArray(rightAnswerIndexArray);
+      array.push(Number(id));
+      setRightAnswerIndexArray(array);
+      new Audio(levelData[Number(id)].correct_answer).play();
+      console.log(correctAnswerCount, levelData.length);
+      correctAnswerCount++;
+    } else {
+      console.log('reached here');
+      new Audio(basket.try_again_sound).play();
+    }
+    if (correctAnswerCount === levelData.length) {
+      console.log(progress, gameIndex);
+      var i = gameIndex;
+      i++;
+      setGameIndex(i);
+    }
+  }
+
+  // console.log(rightAnswerIndexArray.includes(0))
+
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "level0_div"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, {
     onMusicButtonClick: handleMusicButtonClick,
     isMusicPlaying: isMusicPlaying,
-    score: score
+    score: score,
+    selectedLevel: 4,
+    percentFill: progress
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "audio_replay d-flex justify-content-end"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -44569,20 +41891,20 @@ var Index = function Index() {
     className: "btn p-0",
     type: "button",
     onClick: function onClick() {
-      return gameInstructionAudio(levelData1);
+      return gameInstructionAudio();
     },
     disabled: isButtonDisabled
   }, isAudioPlaying || isAudioReplayButtonActive ? /*#__PURE__*/_react.default.createElement("img", {
     src: _Audio_Replay.default,
-    className: "img-fluid",
+    className: "img-fluid Audio_Replay_Btn",
     alt: "Audio_Replay"
   }) : /*#__PURE__*/_react.default.createElement("img", {
     src: _inactive_audio_replay.default,
-    className: "img-fluid",
+    className: "img-fluid Audio_Replay_Btn",
     alt: "Audio_Replay"
   })), !audioReplayEnded && /*#__PURE__*/_react.default.createElement("img", {
     src: _inactive_audio_replay.default,
-    className: "img-fluid",
+    className: "img-fluid Audio_Replay_Btn",
     alt: "Audio_Replay"
   }), showAudioReplayCursor && /*#__PURE__*/_react.default.createElement("img", {
     src: _Hand_Cursor.default,
@@ -44610,30 +41932,135 @@ var Index = function Index() {
     className: "row first_row"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
-  }), levelData.slice(0, 4).map(function (item, index) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactDraggable.default, {
-      key: item.id,
-      style: {
-        position: 'absolute',
-        zIndex: 2
-      },
-      onStart: function onStart(e) {
-        return console.log('start', e);
-      },
-      onStop: function onStop(e) {
-        return console.log('ENd', e);
-      }
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "col-md-2 col-sm-2 first_row_pp"
+  }), demoDataLevel4.slice(0, 4).map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "col-md-2 col-sm-2  first_row_pp",
+      key: item.id
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: item.img,
       className: "img-fluid box_vegetable",
-      alt: "Big Image",
-      style: {
+      alt: "Big Image"
+    }));
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-12 d-flex justify-content-center wood_rack"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _slab_level_.default,
+    className: "img-fluid slab_level_4",
+    alt: "Big Image"
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container game_div_table_2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row first_row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  }), demoDataLevel4.slice(4, 8).map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "col-md-2 col-sm-2",
+      key: item.id
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.img,
+      className: "img-fluid box_vegetable",
+      alt: "Big Image"
+    }));
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-12 d-flex justify-content-center"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _slab_level_.default,
+    className: "img-fluid slab_level_4",
+    alt: "Big Image"
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container game_div_table_2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row first_row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  }), demoDataLevel4.slice(8, 12).map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "col-md-2 col-sm-2",
+      key: item.id
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.img,
+      className: "img-fluid box_vegetable",
+      alt: "Big Image"
+    }));
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-12 d-flex justify-content-center"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _slab_level_.default,
+    className: "img-fluid slab_level_4",
+    alt: "Big Image"
+  }))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "demo_basket"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row first_row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  }), demoBasketLevel4.map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "col-md-2 col-sm-2 first_row_pp ".concat(index === currentAudioIndex && showCursorHand ? "show_hand_cursor" : ""),
+      key: item.id
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.basket,
+      className: "img-fluid vegetable_basket",
+      alt: "Big Image"
+    }), index === currentAudioIndex && showCursorHand && /*#__PURE__*/_react.default.createElement("img", {
+      src: item.hand_cursor,
+      className: "hand_cursor",
+      alt: "hand_cursor"
+    }));
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  }))))), showGridSet && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "game_div_table"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row first_row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-md-3 col-sm-3"
+  }), levelData.slice(0, 4).map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "col-md-2 col-sm-2",
+      key: item.id
+    }, /*#__PURE__*/_react.default.createElement(_reactDragDropContainer.DragDropContainer, {
+      dragData: {
+        id: index,
+        name: item.vegetable_name
+      },
+      targetKey: "item",
+      onDrop: function onDrop(e) {
+        return drop(e);
+      }
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      src: item.img,
+      className: "img-fluid box_vegetable",
+      alt: "Big Image"
+      // draggable={true} onDragStart={(event) => drag(event)}
+      ,
+
+      style: rightAnswerIndexArray.includes(index) ? {
+        zIndex: 1,
+        visibility: 'hidden'
+      } : {
         zIndex: 1
       },
-      id: "drag".concat(item.id)
-    }))));
+      name: item.vegetable_name,
+      id: index
+    })));
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -44654,16 +42081,29 @@ var Index = function Index() {
     return /*#__PURE__*/_react.default.createElement("div", {
       className: "col-md-2 col-sm-2",
       key: item.id
-      // draggable={isDraggable ? "true" : "false"}
-      // onDragStart={
-      //   isDraggable ? (event) => drag(event, item.id) : null
-      // }
+    }, /*#__PURE__*/_react.default.createElement(_reactDragDropContainer.DragDropContainer, {
+      dragData: {
+        id: index + 4,
+        name: item.vegetable_name
+      },
+      targetKey: "item",
+      onDrop: function onDrop(e) {
+        return drop(e);
+      }
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: item.img,
       className: "img-fluid box_vegetable",
+      style: rightAnswerIndexArray.includes(index + 4) ? {
+        zIndex: 1,
+        visibility: 'hidden'
+      } : {
+        zIndex: 1
+      },
       alt: "Big Image",
-      id: "drag".concat(item.id)
-    }));
+      id: index + 4,
+      name: item.vegetable_name
+      // draggable={true} onDragStart={(event) => drag(event)}
+    })));
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -44681,23 +42121,32 @@ var Index = function Index() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
   }), levelData.slice(8, 12).map(function (item, index) {
-    // const isDraggable =
-    //   item.hasOwnProperty("vegetable_name") &&
-    //   item.vegetable_name === "yam";
-
     return /*#__PURE__*/_react.default.createElement("div", {
       className: "col-md-2 col-sm-2",
       key: item.id
-      // draggable={isDraggable ? "true" : "false"}
-      // onDragStart={
-      //   isDraggable ? (event) => drag(event, item.id) : null
-      // }
+    }, /*#__PURE__*/_react.default.createElement(_reactDragDropContainer.DragDropContainer, {
+      dragData: {
+        id: index + 8,
+        name: item.vegetable_name
+      },
+      targetKey: "item",
+      onDrop: function onDrop(e) {
+        return drop(e);
+      }
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: item.img,
       className: "img-fluid box_vegetable",
+      style: rightAnswerIndexArray.includes(index + 8) ? {
+        zIndex: 1,
+        visibility: 'hidden'
+      } : {
+        zIndex: 1
+      },
       alt: "Big Image",
-      id: "drag".concat(item.id)
-    }));
+      id: index + 8,
+      name: item.vegetable_name
+      // draggable={true} onDragStart={(event) => drag(event)}
+    })));
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -44711,8 +42160,8 @@ var Index = function Index() {
   }))))), /*#__PURE__*/_react.default.createElement("div", {
     className: "demo_basket",
     style: {
-      position: 'relative',
-      zIndex: 'auto'
+      position: "relative",
+      zIndex: "auto"
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
@@ -44726,25 +42175,28 @@ var Index = function Index() {
     return /*#__PURE__*/_react.default.createElement("div", {
       className: "col-md-2 col-sm-2 first_row_pp ".concat(index === currentAudioIndex && showCursorHand ? "show_hand_cursor" : ""),
       style: {
-        position: 'relative',
-        zIndex: 'auto'
+        position: "relative",
+        zIndex: "auto"
       },
-      key: item.id
-      // draggable={isDraggable ? "true" : "false"}
-      // onDragStart={
-      //   isDraggable ? (event) => drag(event, item.id) : null
-      // }
-      // onDrop={drop}
-      // onDragOver={allowDrop}
+      key: item.id,
+      onClick: function onClick() {
+        return new Audio(item.basket_sound).play();
+      }
+    }, /*#__PURE__*/_react.default.createElement(_reactDragDropContainer.DropTarget, {
+      targetKey: "item",
+      dropData: {
+        basket: item
+      }
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: item.basket,
       className: "img-fluid vegetable_basket",
       alt: "Big Image"
+      // id={`div${index + 1}`} onDrop={(event) => drop(event, item)} onDragOver={(event) => allowDrop(event)}
     }), index === currentAudioIndex && showCursorHand && /*#__PURE__*/_react.default.createElement("img", {
       src: item.hand_cursor,
       className: "hand_cursor",
       alt: "hand_cursor"
-    }));
+    })));
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-md-3 col-sm-3"
   }))))), soundFilesEnded && /*#__PURE__*/_react.default.createElement(_PlayAgain.default, {
@@ -44765,7 +42217,7 @@ var Index = function Index() {
 };
 var _default = Index;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./index.css":"src/Level4/index.css","../components/common/Header":"src/components/common/Header.js","../../assets/common/textures/interactions/lets_play.png":"assets/common/textures/interactions/lets_play.png","../../assets/common/textures/interactions/Playagain.png":"assets/common/textures/interactions/Playagain.png","../../assets/common/textures/interactions/Playgame.png":"assets/common/textures/interactions/Playgame.png","../../assets/common/textures/interactions/Audio_Replay.png":"assets/common/textures/interactions/Audio_Replay.png","../../assets/common/textures/interactions/inactive_audio_replay.png":"assets/common/textures/interactions/inactive_audio_replay.png","../../assets/common/textures/interactions/Hand_Cursor3.png":"assets/common/textures/interactions/Hand_Cursor3.png","../../assets/common/textures/mascot/Mascot3.png":"assets/common/textures/mascot/Mascot3.png","../../assets/common/textures/mascot/Mascot1.png":"assets/common/textures/mascot/Mascot1.png","../../assets/common/textures/interactions/Speech_Bubble.png":"assets/common/textures/interactions/Speech_Bubble.png","../../assets/common/textures/interactions/Speech_Bubble_2.png":"assets/common/textures/interactions/Speech_Bubble_2.png","../../assets/level4/audio/VBMV_A_L4_1.mp3":"assets/level4/audio/VBMV_A_L4_1.mp3","../../assets/level4/audio/VBMV_A_L4_2.mp3":"assets/level4/audio/VBMV_A_L4_2.mp3","../../assets/level4/audio/VBMV_A_L4_3.mp3":"assets/level4/audio/VBMV_A_L4_3.mp3","../../assets/level4/audio/VBMV_A_L4_8.mp3":"assets/level4/audio/VBMV_A_L4_8.mp3","../../assets/level4/audio/VBMV_A_L4_9.mp3":"assets/level4/audio/VBMV_A_L4_9.mp3","../../assets/level4/images/slab_level_4.png":"assets/level4/images/slab_level_4.png","../../assets/common/audio/Background_music_1.mp3":"assets/common/audio/Background_music_1.mp3","../../assets/common/audio/For_level_completion.mp3":"assets/common/audio/For_level_completion.mp3","../../assets/common/audio/GL_A_19.mp3":"assets/common/audio/GL_A_19.mp3","../../assets/common/audio/GL_A_5.mp3":"assets/common/audio/GL_A_5.mp3","../components/common/Threedots/Threedots":"src/components/common/Threedots/Threedots.js","../components/common/Play_Agian/PlayAgain":"src/components/common/Play_Agian/PlayAgain.js","../constants/level4":"src/constants/level4.js","../components/common/Mascot":"src/components/common/Mascot/index.js","react-draggable":"node_modules/react-draggable/build/cjs/cjs.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./index.css":"src/Level4/index.css","../components/common/Header":"src/components/common/Header.js","../../assets/common/textures/interactions/lets_play.png":"assets/common/textures/interactions/lets_play.png","../../assets/common/textures/interactions/Playagain.png":"assets/common/textures/interactions/Playagain.png","../../assets/common/textures/interactions/Playgame.png":"assets/common/textures/interactions/Playgame.png","../../assets/common/textures/interactions/Audio_Replay.png":"assets/common/textures/interactions/Audio_Replay.png","../../assets/common/textures/interactions/inactive_audio_replay.png":"assets/common/textures/interactions/inactive_audio_replay.png","../../assets/common/textures/interactions/Hand_Cursor3.png":"assets/common/textures/interactions/Hand_Cursor3.png","../../assets/common/textures/mascot/Mascot3.png":"assets/common/textures/mascot/Mascot3.png","../../assets/common/textures/mascot/Mascot1.png":"assets/common/textures/mascot/Mascot1.png","../../assets/common/textures/interactions/Speech_Bubble.png":"assets/common/textures/interactions/Speech_Bubble.png","../../assets/common/textures/interactions/Speech_Bubble_2.png":"assets/common/textures/interactions/Speech_Bubble_2.png","../../assets/level4/audio/VBMV_A_L4_1.mp3":"assets/level4/audio/VBMV_A_L4_1.mp3","../../assets/level4/audio/VBMV_A_L4_2.mp3":"assets/level4/audio/VBMV_A_L4_2.mp3","../../assets/level4/audio/VBMV_A_L4_3.mp3":"assets/level4/audio/VBMV_A_L4_3.mp3","../../assets/level4/audio/VBMV_A_L4_8.mp3":"assets/level4/audio/VBMV_A_L4_8.mp3","../../assets/level4/audio/VBMV_A_L4_9.mp3":"assets/level4/audio/VBMV_A_L4_9.mp3","../../assets/level4/audio/VBMV_A_L4_36.mp3":"assets/level4/audio/VBMV_A_L4_36.mp3","../../assets/level4/images/slab_level_4.png":"assets/level4/images/slab_level_4.png","../../assets/common/audio/Background_music_1.mp3":"assets/common/audio/Background_music_1.mp3","../../assets/common/audio/For_level_completion.mp3":"assets/common/audio/For_level_completion.mp3","../../assets/common/audio/GL_A_19.mp3":"assets/common/audio/GL_A_19.mp3","../../assets/common/audio/GL_A_5.mp3":"assets/common/audio/GL_A_5.mp3","../components/common/Threedots/Threedots":"src/components/common/Threedots/Threedots.js","../components/common/Play_Agian/PlayAgain":"src/components/common/Play_Agian/PlayAgain.js","../constants/level4":"src/constants/level4.js","../components/common/Mascot":"src/components/common/Mascot/index.js","react-drag-drop-container":"node_modules/react-drag-drop-container/lib/bundle.js","../helper":"src/helper.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44826,7 +42278,7 @@ var loadLevel = function loadLevel(currentLevelState, setCurrentLevelState) {
   }
 };
 function App() {
-  var _useState = (0, _react.useState)(3),
+  var _useState = (0, _react.useState)(0),
     _useState2 = _slicedToArray(_useState, 2),
     currentLevelState = _useState2[0],
     setCurrentLevelState = _useState2[1];
@@ -44858,7 +42310,6 @@ var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var container = document.getElementById("root");
 var root = (0, _client.createRoot)(container);
-console.log('hi');
 root.render( /*#__PURE__*/_react.default.createElement(_App.default, null));
 },{"react":"node_modules/react/index.js","react-dom/client":"node_modules/react-dom/client.js","./App":"src/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -44885,7 +42336,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54669" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53973" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
