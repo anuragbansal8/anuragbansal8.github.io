@@ -12,6 +12,10 @@ body{
     background-size: cover;  */
 }
 
+p {
+   line-height: 150%; 
+}
+
 h1{
     text-align: center;
 }
